@@ -70,12 +70,12 @@ const ProductPage = ({
   </div>
 
   {/* Section 3: Stats */}
-  <div className="w-full md:w-2/5 flex flex-col items-center md:items-end justify-center space-y-8 mt-8 md:mt-20 px-6 md:px-10 lg:pr-6 xl:pr-8">
+  <div className="w-full md:w-2/5 flex flex-col items-start justify-center space-y-8 mt-8 md:mt-20 px-6 md:px-10 lg:pr-6 xl:pr-8">
     {stats.slice(0, 3).map((stat, idx) => (
-      <div key={idx} className="text-center md:text-right w-full md:w-[90%]" >
-        <h2 className="text-[#257E2C] text-2xl md:text-3xl font-bold">{stat.value}</h2>
-        <div className="border-b-2 border-[#257E2C] mt-2 mb-2 w-full"></div>
-        <p className="text-sm  text-[#257E2C]">{stat.label}</p>
+      <div key={idx} className="text-left w-full relative" >
+        <h2 className="text-[#257E2C] text-2xl md:text-3xl font-bold inline-block">{stat.value}</h2>
+        <div className="border-b-2 border-[#257E2C] mt-2 mb-2 w-full absolute left-0"></div>
+        <p className="text-sm text-[#257E2C] mt-4">{stat.label}</p>
       </div>
     ))}
   </div>
