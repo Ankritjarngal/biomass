@@ -52,30 +52,32 @@ const ProductPage = ({
   }}
 >
 <div className="container mx-auto px-4 lg:px-8 xl:px-12 flex flex-col md:flex-row items-center">
+  {/* Section 1: Title and Description */}
   <div className="md:w-2/5 text-left md:pr-4 lg:pr-6 xl:pr-8">
     <h1 className="text-6xl font-black text-[#257E2C]">{title}</h1>
     <p className="mt-4 text-lg leading-relaxed">{description}</p>
   </div>
 
-  <div className="md:w-3/5 mt-8 md:mt-0 flex flex-col md:flex-row items-center md:items-start">
-    <div className="w-full md:w-4/5">
+  {/* Section 2: Image */}
+  <div className="md:w-3/5 mt-8 md:mt-0 flex justify-center">
+    <div className="w-4/5">
       <img
         src={heroImage}
         alt={title}
         className="mx-auto w-full h-auto scale-90"
       />
     </div>
-    <div className="w-full md:w-2/5 flex flex-col items-center md:items-end justify-center space-y-8 mt-64 md:mt-20 px-6 md:px-10 lg:pr-6 xl:pr-8">
-  {stats.slice(0, 3).map((stat, idx) => (
-    <div key={idx} className="text-center md:text-right w-full md:w-[90%] mt-8" >
-      <h2 className="text-[#257E2C] text-2xl md:text-3xl font-bold">{stat.value}</h2>
-      <div className="border-b-2 border-[#257E2C] mt-2 mb-2 w-full"></div>
-      <p className="text-sm  text-[#257E2C]">{stat.label}</p>
-    </div>
-  ))}
-</div>
+  </div>
 
-
+  {/* Section 3: Stats */}
+  <div className="w-full md:w-2/5 flex flex-col items-center md:items-end justify-center space-y-8 mt-8 md:mt-20 px-6 md:px-10 lg:pr-6 xl:pr-8">
+    {stats.slice(0, 3).map((stat, idx) => (
+      <div key={idx} className="text-center md:text-right w-full md:w-[90%]" >
+        <h2 className="text-[#257E2C] text-2xl md:text-3xl font-bold">{stat.value}</h2>
+        <div className="border-b-2 border-[#257E2C] mt-2 mb-2 w-full"></div>
+        <p className="text-sm  text-[#257E2C]">{stat.label}</p>
+      </div>
+    ))}
   </div>
 </div>
 
