@@ -1,0 +1,10 @@
+@import "tailwindcss";
+body {
+    @apply font-sans;
+  }
+  
+  /* Optional: absolutely force it for all elements */
+  * {
+    font-family: 'Mulish', sans-serif !important;
+  }
+  
