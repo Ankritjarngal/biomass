@@ -9,14 +9,20 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full flex items-center justify-between px-6 py-4 ${
-        isHomePage ? "absolute top-0 left-0 right-0" : "relative"
-      } z-50 bg-${isHomePage ? "transparent" : "white"} ${
+      className={`w-full flex items-center justify-between
+        px-4 py-4 md:px-[60px]  /* 4 for mobile, 60px for desktop */
+        ${isHomePage ? "absolute top-0 left-0 right-0" : "relative"}
+        z-50 bg-${isHomePage ? "transparent" : "white"} ${
         !isHomePage ? "shadow-sm" : ""
       }`}
     >
       {/* Logo */}
-      <div className="flex items-center cursor-pointer" onClick={() => { window.location.href = "/"; }}>
+      <div
+        className="flex items-center cursor-pointer"
+        onClick={() => {
+          window.location.href = "/";
+        }}
+      >
         <div className="w-12 h-12 rounded-full flex items-center justify-center">
           <img
             src="/WhatsApp Image 2025-04-29 at 9.01.35 AM 2.png"
@@ -48,7 +54,7 @@ const Navbar = () => {
         </ul>
 
         {/* Right Icon */}
-        <div className="w-10 h-10 rounded-full hidden md:flex items-center justify-center ml-2">
+        <div className="w-10 h-10 rounded-full hidden md:flex items-center justify-center">
           <img
             src="/Component 16.png"
             alt="icon"
@@ -98,19 +104,29 @@ const Navbar = () => {
           className="absolute top-full left-0 w-full bg-white shadow-md md:hidden flex flex-col gap-4 py-4 px-6 text-sm font-medium z-50"
         >
           <li className="text-gray-700 hover:text-green-600">
-            <Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link>
+            <Link to="/" onClick={() => setIsMenuOpen(false)}>
+              Home
+            </Link>
           </li>
           <li className="text-gray-600 hover:text-green-600">
-            <Link to="/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+            <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+              About Us
+            </Link>
           </li>
           <li className="text-gray-700 hover:text-green-600">
-            <Link to="/products" onClick={() => setIsMenuOpen(false)}>Products</Link>
+            <Link to="/products" onClick={() => setIsMenuOpen(false)}>
+              Products
+            </Link>
           </li>
           <li className="text-gray-700 hover:text-green-600">
-            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+              Contact Us
+            </Link>
           </li>
           <li className="text-gray-700 hover:text-green-600">
-            <Link to="/sustainability" onClick={() => setIsMenuOpen(false)}>Sustainability</Link>
+            <Link to="/sustainability" onClick={() => setIsMenuOpen(false)}>
+              Sustainability
+            </Link>
           </li>
         </ul>
       )}

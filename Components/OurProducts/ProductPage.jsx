@@ -51,8 +51,8 @@ const ProductPage = ({
       'linear-gradient(0deg, rgba(149, 112, 76, 0.4) 0%, rgba(149, 112, 76, 0.22) 50%, rgba(149, 112, 76, 0.02) 100%)',
   }}
 >
-<div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
-  <div className="md:w-2/5 text-left md:pr-4">
+<div className="container mx-auto px-4 lg:px-8 xl:px-12 flex flex-col md:flex-row items-center">
+  <div className="md:w-2/5 text-left md:pr-4 lg:pr-6 xl:pr-8">
     <h1 className="text-6xl font-black text-[#257E2C]">{title}</h1>
     <p className="mt-4 text-lg leading-relaxed">{description}</p>
   </div>
@@ -65,7 +65,7 @@ const ProductPage = ({
         className="mx-auto w-full h-auto scale-90"
       />
     </div>
-    <div className="w-full md:w-2/5 flex flex-col items-center md:items-end justify-center space-y-8 mt-64 md:mt-20 px-6 md:px-10">
+    <div className="w-full md:w-2/5 flex flex-col items-center md:items-end justify-center space-y-8 mt-64 md:mt-20 px-6 md:px-10 lg:pr-6 xl:pr-8">
   {stats.slice(0, 3).map((stat, idx) => (
     <div key={idx} className="text-center md:text-right w-full md:w-[90%] mt-8" >
       <h2 className="text-[#257E2C] text-2xl md:text-3xl font-bold">{stat.value}</h2>
