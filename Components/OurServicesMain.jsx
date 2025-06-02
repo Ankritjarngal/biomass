@@ -11,7 +11,7 @@ const services = [
     title: 'Consultancy Services',
     description:
       'Technical consultancy for industrial boiler setups and biomass fuel integration — tailored to optimize energy efficiency and fuel performance.',
-    image: '/16e45c7a210c394c68f574eaae3dcd2507d04703.png',
+    image: "/Service Image Container.jpg",
   },
   {
     id: 3,
