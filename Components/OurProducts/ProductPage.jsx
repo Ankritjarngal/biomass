@@ -109,7 +109,7 @@ const ProductPage = ({
 </div>
 
         <div className="bg-[#D6ECC9] h-[382px] flex items-center">
-  <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start w-full">
+  <div className="container mx-auto px-4 lg:px-8 xl:px-12 flex flex-col md:flex-row justify-between items-start w-full">
     
     {/* Left Title Section */}
     <div className="w-full md:w-1/5 flex flex-col justify-start items-start">
@@ -120,7 +120,7 @@ const ProductPage = ({
     </div>
 
     {/* Stats Section */}
-    <div className="w-full md:w-4/5 grid grid-cols-2 gap-y-8 gap-x-6 justify-end text-left">
+    <div className="w-full md:w-4/5 grid grid-cols-2 gap-y-8 gap-x-6 justify-end text-left lg:pr-6 xl:pr-8">
       {stats.map((stat, idx) => (
         <div key={idx}>
           <h2 className="text-green-700 text-xl md:text-2xl font-bold">{stat.value}</h2>
