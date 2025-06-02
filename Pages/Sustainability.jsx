@@ -10,9 +10,9 @@ export default function Sustainability() {
         <img
           src="badaa488fb990404e0ff130e4f5a605cd176fb74.jpg"
           alt="Header"
-          className="w-full h-[250px] md:h-[400px] object-cover"
+          className="w-full h-[250px] md:h-[450px] object-cover"
         />
-        <h2 className="absolute left-4 md:left-6 bottom-4 md:bottom-6 text-3xl md:text-5xl font-bold text-white">
+        <h2 className="absolute left-4 md:left-6 bottom-4 md:bottom-6 text-[52px] md:text-5xl font-bold text-white">
           Sustainability
         </h2>
       </div>

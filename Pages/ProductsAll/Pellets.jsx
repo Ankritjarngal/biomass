@@ -9,7 +9,7 @@ const Pellets = () => {
       description="Pellets are small, cylindrical biomass fuels made by compressing agricultural or wood residues like sawdust or bagasse into dense, uniform shapes. Known for their high combustion efficiency and low moisture content, pellets are ideal for use in heating systems, biomass boilers, and industrial furnaces. Their consistent size, easy handling, and clean-burning nature make them a sustainable and convenient green fuel alternative for various energy applications."
       heroImage="/Product card.png"
       stats={[
-        { value: '4000-4200 kcal/kg', label: 'Calorific Value' },
+        { value: '4000-4200 kcal/kg', label: 'Gross Calorific Value' },
         { value: '<6%', label: 'Ash Content' },
         { value: '<8%', label: 'Total Moisture' },
         { value: '3000 MT/Month', label: 'Supply Capacity' },

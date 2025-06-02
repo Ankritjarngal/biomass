@@ -7,7 +7,7 @@ const products = [
   { name: 'Palm Nut Shell', img: '/Product card-2.png', alt: 'Palm Nut Shell', link: '/products/palm-nut-shell' },
   { name: 'Rice Husk', img: '/Product card-1.png', alt: 'Rice Husk', link: '/products/rice-husk' },
   { name: 'Bagasse Dust', img: '/Container-2.png', alt: 'Bagasse Dust', link: '/products/baggasse-dust' },
-  { name: 'Saw Dust', img: '/Product card-1.png', alt: 'Saw Dust', link: '/products/saw-dust' },
+  { name: 'Saw Dust', img: '/Product image-1.png', alt: 'Saw Dust', link: '/products/saw-dust' },
   { name: 'Coffee Nut Shell', img: '/Product imag.png', alt: 'Coffee Nut Shell', link: '/products/coffee-nut-shell' },
   { name: 'Cashew Nut Shell', img: '/Feature image section.png', alt: 'Cashew Nut Shell', link: '/products/cashew-nut-shell' },
 ];
@@ -15,14 +15,14 @@ const products = [
 const BiomassProducts = () => {
   return (
     <div className="w-full">
-      <div className="relative w-full h-[400px] mb-10">
+      <div className="relative w-full h-[450px] mb-10">
         <img
           src="/5b8c763f58795d35e15e75916700c45f6285c56a.jpg"
           alt="Header"
           className="absolute inset-0 w-full h-full object-cover z-20"
         />
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        <h2 className="absolute left-6 bottom-6 text-4xl font-bold text-white z-30">Our Products</h2>
+        <h2 className="absolute left-6 bottom-6 text-[52px] font-bold text-white z-30">Our Products</h2>
       </div>
 
       {/* Biomass Fuel Description */}

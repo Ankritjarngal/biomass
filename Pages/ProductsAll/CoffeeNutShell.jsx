@@ -9,7 +9,7 @@ const CoffeeNutShell = () => {
       description="Coffee nut shell fuels harness the power of discarded coffee shells, transforming them into a sustainable and efficient energy source ideal for both industrial applications and residential heating. Their compact structure and impressive energy yield ensure dependable performance. By recycling materials that would typically go to waste, these coffee nut shells offer an environmentally friendly alternative to conventional fuels."
       heroImage="/Product imag.png"
       stats={[
-        { value: '3800 kcal/kg', label: 'Calorific Value' },
+        { value: '3800 kcal/kg', label: 'Gross Calorific Value' },
         { value: '<5%', label: 'Ash Content' },
         { value: '<10%', label: 'Total Moisture' },
         { value: '1500 MT/Month', label: 'Supply Capacity' },

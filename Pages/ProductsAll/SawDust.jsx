@@ -8,7 +8,7 @@ const SawDust = () => {
       description="Sawdust is a fine, powdery residue generated from cutting, grinding, or sanding wood. It is a versatile biomass material commonly used as fuel in its raw form or processed into briquettes and pellets. With decent calorific value and easy availability, sawdust is an eco-friendly energy source ideal for combustion in industrial and domestic settings. Its lightweight, dry texture ensures quick ignition and consistent burning."
       heroImage="/Product image-1.png"
       stats={[
-        { value: '3800 kcal/kg', label: 'Calorific Value' },
+        { value: '3800 kcal/kg', label: 'Gross Calorific Value' },
         { value: '<5%', label: 'Ash Content' },
         { value: '<25%', label: 'Total Moisture' },
         { value: '3000 MT/Month', label: 'Supply Capacity' },

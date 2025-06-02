@@ -9,7 +9,7 @@ const CashewNutShell = () => {
       description="Cashew Nut Shell (CNS) is a biofuel made from the outer shell of cashew nuts. It has high natural oil and carbon content, providing excellent combustion properties and a high Gross Calorific Value (GCV). CNS is commonly used in industrial boilers and furnaces for its energy output, low moisture, and consistent burn efficiency, making it an eco-friendly renewable fuel."
       heroImage="/Feature image section.png"
       stats={[
-        { value: '4200 kcal/kg', label: 'Calorific Value' },
+        { value: '4200 kcal/kg', label: 'Gross Calorific Value' },
         { value: '<10%', label: 'Ash Content' },
         { value: '<12%', label: 'Total Mositure' },
         { value: '1500 MT/Month', label: 'Supply Capacity' },

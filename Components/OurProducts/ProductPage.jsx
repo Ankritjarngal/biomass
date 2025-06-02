@@ -24,7 +24,7 @@ const ProductPage = ({
     { name: 'Palm Nut Shell', img: '/Product card-2.png', alt: 'Palm Nut Shell', link: '/palm-nut-shell' },
     { name: 'Rice Husk', img: '/Product card-1.png', alt: 'Rice Husk', link: '/rice-husk' },
     { name: 'Bagasse Dust', img: '/Container-2.png', alt: 'Bagasse Dust', link: '/baggasse-dust' },
-    { name: 'Saw Dust', img: '/Product card-1.png', alt: 'Saw Dust', link: '/saw-dust' },
+    { name: 'Saw Dust', img: '/Product image-1.png', alt: 'Saw Dust', link: '/saw-dust' },
     { name: 'Coffee Nut Shell', img: '/Product imag.png', alt: 'Coffee Nut Shell', link: '/coffee-nut-shell' },
     { name: 'Cashew Nut Shell', img: '/Feature image section.png', alt: 'Cashew Nut Shell', link: '/cashew-nut-shell' },
   ];
@@ -65,71 +65,78 @@ const ProductPage = ({
         className="mx-auto w-full h-auto scale-90"
       />
     </div>
-
-    <div className="w-full md:w-1/5 flex flex-col items-center md:items-end space-y-6 mt-6 md:mt-8 px-4 md:px-0">
-      {stats.slice(0, 3).map((stat, idx) => (
-        <div key={idx} className="text-center md:text-right w-full">
-          <h2 className="text-[#257E2C] text-2xl md:text-3xl font-bold">{stat.value}</h2>
-          <div className="border-b-2 border-[#257E2C] mt-1 mb-1 mx-auto md:mx-0 w-10 md:w-full"></div>
-          <p className="text-sm text-gray-600">{stat.label}</p>
-        </div>
-      ))}
+    <div className="w-full md:w-2/5 flex flex-col items-center md:items-end justify-center space-y-8 mt-64 md:mt-20 px-6 md:px-10">
+  {stats.slice(0, 3).map((stat, idx) => (
+    <div key={idx} className="text-center md:text-right w-full md:w-[90%] mt-8" >
+      <h2 className="text-[#257E2C] text-2xl md:text-3xl font-bold">{stat.value}</h2>
+      <div className="border-b-2 border-[#257E2C] mt-2 mb-2 w-full"></div>
+      <p className="text-sm  text-[#257E2C]">{stat.label}</p>
     </div>
+  ))}
+</div>
+
+
   </div>
 </div>
 
 </div>
 
         {/* Info Cards */}
-        <div className="overflow-x-auto px-4 sm:px-8 lg:px-12 py-6">
-          <div className="flex gap-8 min-w-max lg:justify-center">
-            {cards.map((card, idx) => (
-              <div
-                key={idx}
-                className="rounded-3xl overflow-hidden shadow-md relative flex-shrink-0"
-                style={{ width: "320px", height: "480px" }}
-              >
-                <img src={card.image} alt={card.title} className="w-full h-full object-cover" />
-                <div
-                  className="absolute bottom-6 left-6 right-6 bg-white rounded-2xl p-6 text-center flex flex-col"
-                  style={{ height: "260px" }}
-                >
-                  <h3 className="text-xl font-bold text-[#257E2C] mb-3 leading-tight">{card.title}</h3>
-                  <p className="text-sm  leading-relaxed flex-grow flex items-center justify-center overflow-hidden">
-                    {card.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="overflow-x-auto px-8 mt-[90px] mb-[90px] sm:px-8 lg:px-20 py-12">
+        <div className="flex gap-6 min-w-max lg:justify-center space-x-[32px]">
+  {cards.map((card, idx) => (
+    <div
+      key={idx}
+      className="rounded-3xl overflow-hidden shadow-md relative flex-shrink-0"
+      style={{ width: "320px", height: "480px" }}
+    >
+      <img src={card.image} alt={card.title} className="w-full h-full object-cover" />
+      <div
+        className="absolute bottom-2.5 left-2.5 right-2.5 bg-white rounded-3xl pt-2 pb-3 px-4 text-center flex flex-col"
+        style={{ height: "200px" }}
+      >
+        <h3 className="text-2xl font-bold text-[#257E2C] mb-1 leading-snug line-clamp-2">
+          {card.title}
+        </h3>
+        <div className="overflow-y-auto text-sm leading-relaxed text-gray-700 flex-1">
+          {card.description}
         </div>
+      </div>
+    </div>
+  ))}
+</div>
 
-        <div className="bg-[#D6ECC9] py-10">
-          <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-6">
-            {/* Left Title Section */}
-            <div className="md:col-span-1 flex justify-center md:justify-start items-center text-center md:text-left">
-              <h2 className="text-2xl md:text-3xl font-bold leading-snug">
-                More About
-                <br />
-                {title}
-              </h2>
-            </div>
+</div>
 
-            {/* Stats Section */}
-            <div className="md:col-span-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
-              {stats.map((stat, idx) => (
-                <div key={idx} className="text-center">
-                  <h2 className="text-green-700 text-xl md:text-2xl font-bold">{stat.value}</h2>
-                  <div className="border-b-2 border-green-700 mt-1 mb-1 mx-auto w-4/5"></div>
-                  <p className="text-sm md:text-base text-gray-600">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="bg-[#D6ECC9] h-[382px] flex items-center">
+  <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-start w-full">
+    
+    {/* Left Title Section */}
+    <div className="w-full md:w-1/5 flex flex-col justify-start items-start">
+      <h2 className="text-2xl md:text-3xl font-bold leading-snug">
+        More About<br />
+        {title}
+      </h2>
+    </div>
+
+    {/* Stats Section */}
+    <div className="w-full md:w-4/5 grid grid-cols-2 gap-y-8 gap-x-6 justify-end text-left">
+      {stats.map((stat, idx) => (
+        <div key={idx}>
+          <h2 className="text-green-700 text-xl md:text-2xl font-bold">{stat.value}</h2>
+          <div className="border-b-2 border-green-700 mt-2 mb-2 w-64"></div> {/* shorter border */}
+          <p className="text-sm md:text-base text-gray-600">{stat.label}</p>
         </div>
+      ))}
+    </div>
+    
+  </div>
+</div>
+
+
 
         {/* Discover More Products - Horizontal Scrolling */}
-        <div className="px-6 py-10 max-w-7xl mx-auto rounded-2xl">
+        <div className="px-6 py-10 max-w-10xl ml-[60px] mr-[60px] rounded-2xl">
           <h3 className="text-3xl font-bold mb-6">Discover More Products</h3>
 
           {/* Horizontal Scrolling Container */}

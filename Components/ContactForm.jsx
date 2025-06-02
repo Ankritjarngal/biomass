@@ -3,7 +3,7 @@ import { Phone, Mail } from "lucide-react";
 
 const ContactForm = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-6 px-4 py-10 md:py-16 w-full">
+    <div className="ml-8 mr-8 flex flex-col md:flex-row justify-center items-center gap-6 px-4 py-10 md:py-16 ">
 
       {/* Left Section - Image + Contact Info */}
       <div className="relative w-full md:w-[48%] h-[500px] rounded-xl overflow-hidden shadow-lg">

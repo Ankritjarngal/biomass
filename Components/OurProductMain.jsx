@@ -40,7 +40,7 @@ const OurProducts = () => {
   return (
     <section className="px-4 md:px-20 py-10">
       {/* Top Section Aligned Left */}
-      <div className="mb-10 max-w-4xl">
+      <div className="mb-10 max-w-4xl ml-4.5">
         <h2 className="text-3xl md:text-4xl font-bold text-[#1F7D1F]">Our Products</h2>
         <p className="font-bold mt-2">We Offer Better Products For You</p>
         <p className="mt-2 text-sm md:text-base font-medium">

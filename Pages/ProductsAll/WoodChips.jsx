@@ -8,10 +8,11 @@ const WoodChips = () => {
       description="Crafted from shredded wood, woodchips serve as a sustainable and efficient energy source ideal for both industrial applications and home heating. Their compact structure and impressive energy yield ensure dependable performance. By utilizing materials that would typically go to waste, these woodchips offer an environmentally friendly substitute for conventional fuels."
       heroImage="/Container-1.png"
       stats={[
-        { value: '3600-4000 kcal/kg', label: 'Calorific Value' },
+        { value: '3600-4000 kcal/kg', label: 'Gross Calorific Value' },
         { value: '<5%', label: 'Ash Content' },
         { value: '<30%', label: 'Total Moisture' },
         { value: '9000 MT/Month', label: 'Supply Capacity' },
+        
       ]}
       cards={[
         {

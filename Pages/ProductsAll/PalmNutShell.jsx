@@ -9,7 +9,7 @@ const PalmNutShell = () => {
       description="Rice Husk is the protective covering of rice grains separated during milling. It is a widely used agricultural by-product as biomass fuel. With moderate calorific value and low moisture, it serves as an efficient energy source for rural industries. Its availability and renewable nature make it an eco-friendly substitute for conventional fuels."
       heroImage="/Product card-2.png"
       stats={[
-        { value: '4500 kcal/kg', label: 'Calorific Value' },
+        { value: '4500 kcal/kg', label: 'Gross Calorific Value' },
         { value: '<8%', label: 'Ash Content' },
         { value: '<10%', label: 'Total Moisture' },
         { value: '1500 MT/Month', label: 'Supply Capacity' },
