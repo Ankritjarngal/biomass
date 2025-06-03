@@ -118,14 +118,15 @@ const Navbar = () => {
               Products
             </Link>
           </li>
-          <li className="text-gray-700 hover:text-green-600">
-            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-              Contact Us
-            </Link>
-          </li>
+         
           <li className="text-gray-700 hover:text-green-600">
             <Link to="/sustainability" onClick={() => setIsMenuOpen(false)}>
               Sustainability
+            </Link>
+          </li>
+          <li className="text-gray-700 hover:text-green-600">
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+              Contact Us
             </Link>
           </li>
         </ul>

@@ -54,8 +54,8 @@ const ProductPage = ({
 <div className="container mx-auto px-4 lg:px-8 xl:px-12 flex flex-col md:flex-row items-center">
   {/* Section 1: Title and Description */}
   <div className="md:w-2/5 text-left md:pr-4 lg:pr-6 xl:pr-8">
-    <h1 className="text-6xl font-black text-[#257E2C]">{title}</h1>
-    <p className="mt-4 text-lg leading-relaxed">{description}</p>
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-[#257E2C]">{title}</h1>
+    <p className="mt-4 text-sm sm:text-base md:text-lg leading-relaxed">{description}</p>
   </div>
 
   {/* Section 2: Image */}
@@ -73,9 +73,9 @@ const ProductPage = ({
   <div className="w-full md:w-2/5 flex flex-col items-start justify-center space-y-8 mt-8 md:mt-20 px-6 md:px-10 lg:pr-6 xl:pr-8">
     {stats.slice(0, 3).map((stat, idx) => (
       <div key={idx} className="text-left w-full relative" >
-        <h2 className="text-[#257E2C] text-2xl md:text-3xl font-bold inline-block">{stat.value}</h2>
+        <h2 className="text-[#257E2C] text-xl sm:text-2xl md:text-3xl font-bold inline-block">{stat.value}</h2>
         <div className="border-b-2 border-[#257E2C] mt-2 mb-2 w-full absolute left-0"></div>
-        <p className="text-sm text-[#257E2C] mt-4">{stat.label}</p>
+        <p className="text-xs sm:text-sm text-[#257E2C] mt-4">{stat.label}</p>
       </div>
     ))}
   </div>
@@ -137,88 +137,148 @@ const ProductPage = ({
 
 
 
-        {/* Discover More Products - Horizontal Scrolling */}
-        <div className="px-6 py-10 max-w-10xl ml-[60px] mr-[60px] rounded-2xl">
-          <h3 className="text-3xl font-bold mb-6">Discover More Products</h3>
+        {/* Discover More Products - Responsive Layout */}
+        <div className="px-4 sm:px-6 lg:px-[60px] py-10 rounded-2xl">
+          <h3 className="text-2xl sm:text-3xl font-bold mb-6">Discover More Products</h3>
 
-          {/* Horizontal Scrolling Container */}
-          <div className="overflow-hidden pb-4" ref={scrollRef}>
-            <div 
-              className="flex gap-6 animate-scroll"
-              style={{
-                width: `${(otherProducts.length * 2) * 404}px`,
-                animation: 'scroll 30s linear infinite'
-              }}
-            >
-              {/* First set of products */}
-              {otherProducts.map((product, index) => (
-                <div
-                  key={`first-${index}`}
-                  className="bg-white p-8 rounded-2xl shadow-sm transition-all duration-300 cursor-pointer group relative overflow-hidden flex-shrink-0 w-[380px] h-[450px]"
-                  onClick={() => handleProductClick(product.link)}
-                >
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,_#F2F2F2_0%,_rgba(242,242,242,0.1)_100%)] rounded-2xl"></div>
-                  <div className="absolute inset-0 bg-gradient-to-b from-[#D9F3BA]/50 via-[#E8F7D6]/30 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
-                  <div className="relative z-10">
-                    <div className="flex justify-between items-center mb-6">
-                      <h4 className="text-2xl font-bold">{product.name}</h4>
-                      <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center border-3 border-gray-500 rounded-ful">
-                        <img src="/Arrow up-right.png" alt="Arrow icon" />
-                      </div>
-                    </div>
-                    <div className="flex justify-center mb-4">
-                      <img
-                        src={product.img}
-                        alt={product.alt}
-                        className="h-[260px] object-cover rounded-xl"
-                      />
+          {/* Mobile & Small Screens: 2-column grid */}
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 md:hidden">
+            {otherProducts.slice(0, 6).map((product, index) => (
+              <div
+                key={index}
+                className="bg-white p-4 rounded-2xl shadow-sm transition-all duration-300 cursor-pointer group relative overflow-hidden"
+                onClick={() => handleProductClick(product.link)}
+              >
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,_#F2F2F2_0%,_rgba(242,242,242,0.1)_100%)] rounded-2xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-[#D9F3BA]/50 via-[#E8F7D6]/30 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                <div className="relative z-10">
+                  <div className="flex justify-between items-center mb-3">
+                    <h4 className="text-sm sm:text-base font-bold line-clamp-2">{product.name}</h4>
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gray-100 rounded-full flex items-center justify-center border-2 border-gray-500 flex-shrink-0">
+                      <img src="/Arrow up-right.png" alt="Arrow icon" className="w-3 h-3 sm:w-4 sm:h-4" />
                     </div>
                   </div>
-                </div>
-              ))}
-              {/* Duplicate set for seamless loop */}
-              {otherProducts.map((product, index) => (
-                <div
-                  key={`second-${index}`}
-                  className="bg-white p-8 rounded-2xl shadow-sm transition-all duration-300 cursor-pointer group relative overflow-hidden flex-shrink-0 w-[380px] h-[450px]"
-                  onClick={() => handleProductClick(product.link)}
-                >
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,_#F2F2F2_0%,_rgba(242,242,242,0.1)_100%)] rounded-2xl"></div>
-                  <div className="absolute inset-0 bg-gradient-to-b from-[#D9F3BA]/50 via-[#E8F7D6]/30 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
-                  <div className="relative z-10">
-                    <div className="flex justify-between items-center mb-6">
-                      <h4 className="text-2xl font-bold">{product.name}</h4>
-                      <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center border-3 border-gray-500 rounded-ful">
-                        <img src="/Arrow up-right.png" alt="Arrow icon" />
-                      </div>
-                    </div>
-                    <div className="flex justify-center mb-4">
-                      <img
-                        src={product.img}
-                        alt={product.alt}
-                        className="h-[260px] object-cover rounded-xl"
-                      />
-                    </div>
+                  <div className="flex justify-center">
+                    <img
+                      src={product.img}
+                      alt={product.alt}
+                      className="h-[120px] sm:h-[140px] object-cover rounded-xl"
+                    />
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-          
-          <style jsx>{`
-            @keyframes scroll {
-              0% {
-                transform: translateX(0);
-              }
-              100% {
-                transform: translateX(-${otherProducts.length * 404}px);
-              }
-            }
+
+          {/* Medium Screens: 4-column grid */}
+          <div className="hidden md:grid md:grid-cols-4 lg:hidden gap-6">
+            {otherProducts.map((product, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-2xl shadow-sm transition-all duration-300 cursor-pointer group relative overflow-hidden"
+                onClick={() => handleProductClick(product.link)}
+              >
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,_#F2F2F2_0%,_rgba(242,242,242,0.1)_100%)] rounded-2xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-[#D9F3BA]/50 via-[#E8F7D6]/30 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                <div className="relative z-10">
+                  <div className="flex justify-between items-center mb-4">
+                    <h4 className="text-lg font-bold line-clamp-2">{product.name}</h4>
+                    <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center border-2 border-gray-500 flex-shrink-0">
+                      <img src="/Arrow up-right.png" alt="Arrow icon" className="w-4 h-4" />
+                    </div>
+                  </div>
+                  <div className="flex justify-center">
+                    <img
+                      src={product.img}
+                      alt={product.alt}
+                      className="h-[180px] object-cover rounded-xl"
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Large Screens: Horizontal Scrolling */}
+          <div className="hidden lg:block">
+            <div className="overflow-hidden pb-4" ref={scrollRef}>
+              <div 
+                className="flex gap-6 animate-scroll"
+                style={{
+                  width: `${(otherProducts.length * 2) * 404}px`,
+                  animation: 'scroll 30s linear infinite'
+                }}
+              >
+                {/* First set of products */}
+                {otherProducts.map((product, index) => (
+                  <div
+                    key={`first-${index}`}
+                    className="bg-white p-8 rounded-2xl shadow-sm transition-all duration-300 cursor-pointer group relative overflow-hidden flex-shrink-0 w-[380px] h-[450px]"
+                    onClick={() => handleProductClick(product.link)}
+                  >
+                    <div className="absolute inset-0 bg-[linear-gradient(180deg,_#F2F2F2_0%,_rgba(242,242,242,0.1)_100%)] rounded-2xl"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#D9F3BA]/50 via-[#E8F7D6]/30 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                    <div className="relative z-10">
+                      <div className="flex justify-between items-center mb-6">
+                        <h4 className="text-2xl font-bold">{product.name}</h4>
+                        <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center border-3 border-gray-500 rounded-ful">
+                          <img src="/Arrow up-right.png" alt="Arrow icon" />
+                        </div>
+                      </div>
+                      <div className="flex justify-center mb-4">
+                        <img
+                          src={product.img}
+                          alt={product.alt}
+                          className="h-[260px] object-cover rounded-xl"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                {/* Duplicate set for seamless loop */}
+                {otherProducts.map((product, index) => (
+                  <div
+                    key={`second-${index}`}
+                    className="bg-white p-8 rounded-2xl shadow-sm transition-all duration-300 cursor-pointer group relative overflow-hidden flex-shrink-0 w-[380px] h-[450px]"
+                    onClick={() => handleProductClick(product.link)}
+                  >
+                    <div className="absolute inset-0 bg-[linear-gradient(180deg,_#F2F2F2_0%,_rgba(242,242,242,0.1)_100%)] rounded-2xl"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#D9F3BA]/50 via-[#E8F7D6]/30 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                    <div className="relative z-10">
+                      <div className="flex justify-between items-center mb-6">
+                        <h4 className="text-2xl font-bold">{product.name}</h4>
+                        <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center border-3 border-gray-500 rounded-ful">
+                          <img src="/Arrow up-right.png" alt="Arrow icon" />
+                        </div>
+                      </div>
+                      <div className="flex justify-center mb-4">
+                        <img
+                          src={product.img}
+                          alt={product.alt}
+                          className="h-[260px] object-cover rounded-xl"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
             
-            .animate-scroll:hover {
-              animation-play-state: paused;
-            }
-          `}</style>
+            <style jsx>{`
+              @keyframes scroll {
+                0% {
+                  transform: translateX(0);
+                }
+                100% {
+                  transform: translateX(-${otherProducts.length * 404}px);
+                }
+              }
+              
+              .animate-scroll:hover {
+                animation-play-state: paused;
+              }
+            `}</style>
+          </div>
         </div>
       </div>
 

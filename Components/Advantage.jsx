@@ -19,22 +19,20 @@ export default function BiomassAdvantages() {
         BIOMASS PELLETS & BRIQUETTES
       </h3>
       <p className="text-[#040404] font-normal mb-10 max-w-3xl">
-        Sreenee Green Biomass pellets and briquettes represent eco-friendly alternatives to fossil fuels, poised to supply a significant portion of the world’s primary energy needs in the near future. These biomass biofuels not only boast a higher calorific value but also play a crucial role in fostering a cleaner, pollution-free environment. Here are several advantages of transitioning to Sreenee Green Biomass pellets and briquettes.
+        Sreenee Green Biomass pellets and briquettes represent eco-friendly alternatives to fossil fuels, poised to supply a significant portion of the world's primary energy needs in the near future. These biomass biofuels not only boast a higher calorific value but also play a crucial role in fostering a cleaner, pollution-free environment. Here are several advantages of transitioning to Sreenee Green Biomass pellets and briquettes.
       </p>
-
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 ">
+      <div className="grid grid-cols-4 md:grid-cols-4 gap-2 md:gap-6">
         {advantages.map((advantage) => (
           <div
             key={advantage.id}
-            className="bg-[#E7FFDB] border border-[#77C04B] p-12 flex flex-col items-center text-center "
+            className="bg-[#E7FFDB] border border-[#77C04B] p-3 md:p-12 flex flex-col items-center text-center"
           >
-           <img
-  src={advantage.image}
-  alt={advantage.title}
-  className="w-14 h-14 mb-4 object-contain filter brightness-0 contrast-100"
-/>
-
-            <p className="text-sm font-black ">{advantage.title}</p>
+            <img
+              src={advantage.image}
+              alt={advantage.title}
+              className="w-8 h-8 md:w-14 md:h-14 mb-2 md:mb-4 object-contain filter brightness-0 contrast-100"
+            />
+            <p className="text-[10px] md:text-sm font-black">{advantage.title}</p>
           </div>
         ))}
       </div>
