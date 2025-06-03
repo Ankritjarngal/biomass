@@ -128,22 +128,21 @@ const GoalFounderSection = () => {
 </div>
 
       <div className="space-y-10 px-4 md:px-10 py-6">
-      <div className="flex justify-center items-center bg-white">
-  <div className="bg-[#D9F0C9] rounded-xl w-[996px] h-[143px] px-8 py-4">
-    <div>
-      <h2 className="text-green-900 font-bold text-3xl mb-1 ml-2">
-        Hear What Our Founder Say
-      </h2>
+      <div className="flex justify-center items-center bg-white px-4">
+      <div className="bg-[#D9F0C9] rounded-xl w-full max-w-[996px] min-h-[143px] px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+        <div className="space-y-3 sm:space-y-4">
+          <h2 className="text-green-900 font-bold text-xl sm:text-2xl lg:text-3xl leading-tight">
+            Hear What Our Founder Say
+          </h2>
+          
+          <div className="w-full max-w-none lg:max-w-[682px] lg:ml-auto lg:mr-4">
+            <p className="text-xs sm:text-sm lg:text-sm text-green-900 leading-relaxed sm:leading-tight">
+              "Our goal is to replace coal with 100% biomass in AP & Telangana industrial boilers by 2030." – Mr. S. S. Rao, Founder & MD
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div className="w-[682px] h-[46px] ml-auto mr-4">
-      <p className="text-sm text-green-900 leading-tight">
-        “Our goal is to replace coal with 100% biomass in AP & Telangana industrial boilers by 2030.” – Mr. S. S. Rao, Founder & MD
-      </p>
-    </div>
-  </div>
-</div>
-
 
 
 

@@ -15,6 +15,10 @@ const ProductPage = ({
 }) => {
   const navigate = useNavigate();
   const scrollRef = useRef(null);
+  const infoCardsRef = useRef(null);
+  const infoCardsSectionRef = useRef(null);
+  const autoScrollIntervalRef = useRef(null);
+  const isUserScrollingRef = useRef(false);
 
   // All available products
   const allProducts = [
@@ -33,6 +37,101 @@ const ProductPage = ({
   const otherProducts = allProducts.filter(product => 
     product.name.toLowerCase() !== title.toLowerCase()
   );
+
+  // Auto-scroll functionality for info cards
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && infoCardsRef.current) {
+            // Start auto-scroll after 2 seconds delay
+            setTimeout(() => {
+              startAutoScroll();
+            }, 2000);
+          } else {
+            stopAutoScroll();
+          }
+        });
+      },
+      {
+        threshold: 0.3,
+        rootMargin: '0px 0px -10% 0px'
+      }
+    );
+
+    const startAutoScroll = () => {
+      if (autoScrollIntervalRef.current) return;
+      
+      autoScrollIntervalRef.current = setInterval(() => {
+        if (isUserScrollingRef.current) return;
+        
+        const container = infoCardsRef.current;
+        if (container && window.innerWidth < 1024) { // Only on smaller screens
+          const scrollWidth = container.scrollWidth;
+          const clientWidth = container.clientWidth;
+          const currentScroll = container.scrollLeft;
+          const maxScroll = scrollWidth - clientWidth;
+          
+          if (currentScroll >= maxScroll) {
+            // Reset to beginning
+            container.scrollTo({
+              left: 0,
+              behavior: 'smooth'
+            });
+          } else {
+            // Calculate scroll distance to show next card
+            const cardWidth = 320;
+            const spacing = 32; // space-x-[32px]
+            const viewportWidth = clientWidth;
+            const cardsPerView = Math.floor(viewportWidth / (cardWidth + spacing));
+            const scrollDistance = (cardWidth + spacing) * Math.max(1, cardsPerView);
+            const nextScroll = Math.min(currentScroll + scrollDistance, maxScroll);
+            
+            container.scrollTo({
+              left: nextScroll,
+              behavior: 'smooth'
+            });
+          }
+        }
+      }, 3000);
+    };
+
+    const stopAutoScroll = () => {
+      if (autoScrollIntervalRef.current) {
+        clearInterval(autoScrollIntervalRef.current);
+        autoScrollIntervalRef.current = null;
+      }
+    };
+
+    // Handle user scroll interactions
+    const handleUserScroll = () => {
+      isUserScrollingRef.current = true;
+      setTimeout(() => {
+        isUserScrollingRef.current = false;
+      }, 1000);
+    };
+
+    if (infoCardsSectionRef.current) {
+      observer.observe(infoCardsSectionRef.current);
+    }
+
+    if (infoCardsRef.current) {
+      infoCardsRef.current.addEventListener('scroll', handleUserScroll);
+      infoCardsRef.current.addEventListener('touchstart', handleUserScroll);
+    }
+
+    return () => {
+      stopAutoScroll();
+      if (infoCardsSectionRef.current) {
+        observer.unobserve(infoCardsSectionRef.current);
+      }
+      if (infoCardsRef.current) {
+        infoCardsRef.current.removeEventListener('scroll', handleUserScroll);
+        infoCardsRef.current.removeEventListener('touchstart', handleUserScroll);
+      }
+    };
+  }, []);
+
   const handleProductClick = (productLink) => {
     navigate("/products" + productLink);
     // Scroll to top after navigation
@@ -40,6 +139,7 @@ const ProductPage = ({
       window.scrollTo({ top: 0, behavior: "smooth" });
     }, 100); // Small delay to ensure navigation completes first
   };
+
   return (
     <div>
       <Navbar />
@@ -84,8 +184,18 @@ const ProductPage = ({
 </div>
 
         {/* Info Cards */}
-        <div className="overflow-x-auto px-8 mt-[90px] mb-[90px] sm:px-8 lg:px-20 py-12">
-        <div className="flex gap-6 min-w-max lg:justify-center space-x-[32px]">
+        <div className="px-8 mt-[90px] mb-[90px] sm:px-8 lg:px-20 py-12" ref={infoCardsSectionRef}>
+        <div 
+          ref={infoCardsRef}
+          className="flex overflow-x-auto gap-6 lg:justify-center space-x-[32px] pb-4 scrollbar-hide"
+          style={{ 
+            scrollbarWidth: 'none', 
+            msOverflowStyle: 'none',
+            // On mobile/tablet, show exactly 2 cards
+            maxWidth: window.innerWidth < 1024 ? 'calc(2 * 320px + 32px + 48px)' : 'none',
+            margin: window.innerWidth < 1024 ? '0 auto' : '0'
+          }}
+        >
   {cards.map((card, idx) => (
     <div
       key={idx}
@@ -108,34 +218,47 @@ const ProductPage = ({
   ))}
 </div>
 
+<style jsx>{`
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+`}</style>
+
 </div>
 
-        <div className="bg-[#D6ECC9] h-[382px] flex items-center">
-  <div className="container mx-auto px-4 lg:px-8 xl:px-12 flex flex-col md:flex-row justify-between items-start w-full">
-    
-    {/* Left Title Section */}
-    <div className="w-full md:w-1/5 flex flex-col justify-start items-start">
-      <h2 className="text-2xl md:text-3xl font-bold leading-snug">
-        More About<br />
-        {title}
-      </h2>
-    </div>
+        {/* More About Section - Fixed for Responsiveness */}
+        <div className="bg-[#D6ECC9] py-8 md:py-12">
+          <div className="container mx-auto px-4 lg:px-8 xl:px-12">
+            
+            {/* Title Section */}
+            <div className="mb-8 md:mb-12">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-left">
+                More About<br />
+                {title}
+              </h2>
+            </div>
 
-    {/* Stats Section */}
-    <div className="w-full md:w-4/5 grid grid-cols-2 gap-y-8 gap-x-6 justify-end text-left lg:pr-6 xl:pr-8">
-      {stats.map((stat, idx) => (
-        <div key={idx}>
-          <h2 className="text-green-700 text-xl md:text-2xl font-bold">{stat.value}</h2>
-          <div className="border-b-2 border-green-700 mt-2 mb-2 w-64"></div> {/* shorter border */}
-          <p className="text-sm md:text-base text-gray-600">{stat.label}</p>
+            {/* Stats Grid - Fully Responsive */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+              {stats.map((stat, idx) => (
+                <div key={idx} className="w-full">
+                  <h2 className="text-green-700 text-lg sm:text-xl md:text-2xl font-bold mb-2">
+                    {stat.value}
+                  </h2>
+                  <div className="border-b-2 border-green-700 w-full max-w-[200px] mb-3"></div>
+                  <p className="text-sm md:text-base text-gray-600 leading-relaxed">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+            
+          </div>
         </div>
-      ))}
-    </div>
-    
-  </div>
-</div>
-
-
 
         {/* Discover More Products - Responsive Layout */}
         <div className="px-4 sm:px-6 lg:px-[60px] py-10 rounded-2xl">
