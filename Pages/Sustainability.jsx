@@ -190,6 +190,45 @@ function SustainabilityStats() {
 function ResponsibilitySection() {
   return (
     <section className="bg-white py-16 pl-4 pr-0 sm:pl-6 sm:pr-0 md:pl-20 md:pr-0">
+        <div className="flex justify-center items-center bg-white px-4">
+        <div className="relative bg-white rounded-2xl border-4 border-[#D6ECC9] w-full max-w-[900px] px-8 py-6">
+          {/* Top left quotation mark */}
+          {/* Top left quotation mark (flipped) */}
+<div className="absolute -top-8 left-4">
+  <div className="w-16 h-16 flex items-center justify-center">
+    <img
+      src="/b25c42174d7249d9246860aff0d736921537c7cb.png"
+      alt="Quote"
+      className="w-10 h-10 rotate-180"
+    />
+  </div>
+</div>
+
+{/* Bottom right quotation mark */}
+<div className="absolute -bottom-9 right-4">
+  <div className="w-16 h-16 flex items-center justify-center">
+    <img
+      src="/b25c42174d7249d9246860aff0d736921537c7cb.png"
+      alt="Quote"
+      className="w-10 h-10"
+    />
+  </div>
+</div>
+
+          
+          <div className="pt-4 pb-4">
+            {/* Quote text */}
+            <p className="text-[#247D2B] text-lg sm:text-xl font-bold text-center leading-relaxed mb-4">
+            “Our present goal is to reduce 1 lakh metric tons of CO₂ emissions annually through sustainable biomass energy solutions.” 
+            </p>
+            
+            {/* Attribution */}
+            <p className="text-[#9F9F9F] text-sm font-medium text-center">
+              - Mr. S. S. Rao, Founder & MD
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* Text on left */}
         <div className="w-full md:w-1/2 text-center md:text-left">

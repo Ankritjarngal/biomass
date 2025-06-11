@@ -127,106 +127,142 @@ const GoalFounderSection = () => {
   </div>
 </div>
 
-      <div className="space-y-10 px-4 md:px-10 py-6">
+<div className="space-y-10 px-4 md:px-10 py-6">
       <div className="flex justify-center items-center bg-white px-4">
-      <div className="bg-[#D9F0C9] rounded-xl w-full max-w-[996px] min-h-[143px] px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
-        <div className="space-y-3 sm:space-y-4">
-          <h2 className="text-green-900 font-bold text-xl sm:text-2xl lg:text-3xl leading-tight">
-            Hear What Our Founder Say
-          </h2>
+        <div className="relative bg-white rounded-2xl border-4 border-[#D6ECC9] w-full max-w-[900px] px-8 py-6">
+          {/* Top left quotation mark */}
+          {/* Top left quotation mark (flipped) */}
+<div className="absolute -top-8 left-4">
+  <div className="w-16 h-16 flex items-center justify-center">
+    <img
+      src="/b25c42174d7249d9246860aff0d736921537c7cb.png"
+      alt="Quote"
+      className="w-10 h-10 rotate-180"
+    />
+  </div>
+</div>
+
+{/* Bottom right quotation mark */}
+<div className="absolute -bottom-9 right-4">
+  <div className="w-16 h-16 flex items-center justify-center">
+    <img
+      src="/b25c42174d7249d9246860aff0d736921537c7cb.png"
+      alt="Quote"
+      className="w-10 h-10"
+    />
+  </div>
+</div>
+
           
-          <div className="w-full max-w-none lg:max-w-[682px] lg:ml-auto lg:mr-4">
-            <p className="text-xs sm:text-sm lg:text-sm text-green-900 leading-relaxed sm:leading-tight">
-              "Our goal is to replace coal with 100% biomass in AP & Telangana industrial boilers by 2030." – Mr. S. S. Rao, Founder & MD
+          <div className="pt-4 pb-4">
+            {/* Quote text */}
+            <p className="text-[#247D2B] text-lg sm:text-xl font-bold text-center leading-relaxed mb-4">
+              "Our goal is to replace coal with 100% biomass in AP & Telangana industrial boilers by 2030."
+            </p>
+            
+            {/* Attribution */}
+            <p className="text-[#9F9F9F] text-sm font-medium text-center">
+              - Mr. S. S. Rao, Founder & MD
             </p>
           </div>
         </div>
       </div>
+
+      <div className="max-w-7xl mx-auto p-6 space-y-8">
+        {/* Founder 1 */}
+        <div className="bg-[#F9FFF6] rounded-2xl p-8 flex flex-col md:flex-row-reverse items-center md:items-start gap-0 md:gap-0">
+          {/* Image with green background wrapper */}
+          <div className="md:bg-[#D7EDC9] rounded-r-2xl p-4 rounded-bl-2xl">
+            <img
+              src="/f397bc81df52561114b9e0dc17bc95a6c71d092b.jpg"
+              alt="Mr. S Srinivas Rao"
+              className="rounded-xl w-full h-auto md:w-[462px] md:h-[516px] object-cover"
+            />
+          </div>
+          
+          <div className="w-full text-gray-800">
+            <div className="md:bg-[#D7EDC9] rounded-l-xl px-4 py-2 mb-4 text-center md:text-left">
+              <h3 className="text-[#77C04B] font-semibold text-base md:text-lg">
+                Business Head
+              </h3>
+              <h3 className="text-[#257E2C] font-bold text-2xl md:text-3xl">
+                Mr S Srinivas Rao
+              </h3>
+            </div>
+            <div className="text-sm md:text-base whitespace-pre-line leading-relaxed">
+              <ul className="list-disc pl-5 space-y-2 text-md font-normal">
+                <li><p className='text-[#1F7D1F] inline'>Business Head </p>– Agrim Biotec & Sreenee Green Energies</li>
+                <li><p className='text-[#1F7D1F] inline'>Managing Partner </p>– RasiEn Eco</li>
+                <li><p className='text-[#1F7D1F] inline'>Qualifications: </p>B.Tech, BOE, MBA</li>
+                <li>
+                  <p className='text-[#1F7D1F] inline'>Experience Summary:</p>
+                  <ul className="list-disc pl-6 mt-1 space-y-1 marker:text-gray-600 marker:text-sm md:marker:text-base">
+                    <li>
+                      Over 25 years of experience in industrial energy and boiler systems,
+                      with senior-level roles in ITC-BPL, ILTD, and Thermax. Expert in biomass
+                      fuel systems, O&M of thermal plants, and sustainable energy transition
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p className='text-[#1F7D1F] inline'>Skills:</p>
+                  <ul className="pl-6 mt-1 space-y-1 border-l-2 border-gray-300 ml-2">
+                    <li className="pl-3">Boiler Operations</li>
+                    <li className="pl-3">Biomass Fuel Strategy</li>
+                    <li className="pl-3">Industrial Project Leadership</li>
+                    <li className="pl-3">Clean Energy Consultation</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Founder 2 */}
+        <div className="bg-[#F9FFF6] rounded-2xl p-8 flex flex-col md:flex-row items-center md:items-start gap-0 md:gap-0">
+          {/* Image with green background wrapper */}
+          <div className="md:bg-[#D7EDC9] rounded-l-2xl p-4 rounded-br-2xl">
+            <img
+              src="/905bf69052848aa8aead57b495017caf3c2e8017.jpg"
+              alt="Mr. A. Samba Shiva Rao"
+              className="rounded-xl w-full h-auto md:w-[462px] md:h-[516px] object-cover"
+            />
+          </div>
+
+          <div className="w-full text-gray-800 md:-ml-4">
+            <div className="md:bg-[#D7EDC9] rounded-r-xl px-4 py-2 mb-4 text-center md:text-left md:pl-12">
+              <h3 className="text-[#77C04B] font-semibold text-base md:text-lg">
+                Business Operations
+              </h3>
+              <h3 className="text-[#257E2C] font-bold text-2xl md:text-3xl">
+              Mr. A. Samba Shiva Rao
+              </h3>
+            </div>
+            <div className="text-sm md:text-base whitespace-pre-line leading-relaxed md:ml-4 md:pl-10">
+              <ul className="list-disc pl-5 space-y-2 text-md font-normal">
+                <li><p className='text-[#1F7D1F] inline'>Name</p>– A. Samba Shiva Rao</li>
+                <li><p className='text-[#1F7D1F] inline'>Qualifications: </p>DME, Diploma in Mechanical Engineer</li>
+                <li>
+                  <p className='text-[#1F7D1F] inline'>Experience Summary:</p>
+                  <ul className="list-disc pl-6 mt-1 space-y-1 marker:text-gray-600 marker:text-sm md:marker:text-base">
+                    <li>With years of industrial experience, Mr. A. S S Rao has Worked as a Thermax Engineer with expertise in steam boilers, ash handling systems, pollution control, and retrofitting equipment for industrial efficiency and compliance.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p className='text-[#1F7D1F] inline'>Skills:</p>
+                  <ul className="pl-6 mt-1 space-y-1 border-l-2 border-gray-300 ml-2">
+                    <li className="pl-3">Energy Optimization</li>
+                    <li className="pl-3">Operational Strategy</li>
+                    <li className="pl-3">Boiler System Management</li>
+                    <li className="pl-3">Industrial Fuel Transition</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
-  {/* Founder 1 */}
-  
-
-  {/* Founder 1 */}
-<div className="bg-[#F9FFF6] rounded-2xl p-8 flex flex-col md:flex-row-reverse items-center md:items-start gap-8 md:gap-12">
-  <img
-    src="/f397bc81df52561114b9e0dc17bc95a6c71d092b.jpg"
-    alt="Mr. S Srinivas Rao"
-    className="rounded-xl w-full h-auto md:w-[462px] md:h-[516px] object-cover md:ml-6"
-  />
-  <div className="w-full text-gray-800">
-    <h3 className="text-[#77C04B] font-semibold text-base md:text-lg mb-2 text-center md:text-left">
-      Business Head
-    </h3>
-    <h3 className="text-[#257E2C] font-bold text-2xl md:text-3xl mb-4 text-center md:text-left">
-      Mr S Srinivas Rao
-    </h3>
-    <div className="text-sm md:text-base whitespace-pre-line leading-relaxed">
-      <ul className="list-disc pl-5 space-y-2 text-md font-normal">
-        <li>Business Head – Agrim Biotec & Sreenee Green Energies</li>
-        <li>Managing Partner – RasiEn Eco</li>
-        <li>Qualifications: B.Tech, BOE, MBA</li>
-        <li>
-Experience Summary:     
-<ul className="list-disc pl-6 mt-1 space-y-1 marker:text-gray-600 marker:text-sm md:marker:text-base">
-            <li>Over 25 years of experience in industrial energy and boiler systems, with senior-level roles in ITC-BPL, ILTD, and Thermax. Expert in biomass fuel systems, O&M of thermal plants, and sustainable energy transition</li>
-            
-          </ul>   </li>
-        <li>
-          Skills:
-          <ul className="list-disc pl-6 mt-1 space-y-1 marker:text-gray-600 marker:text-sm md:marker:text-base">
-            <li>Boiler Operations</li>
-            <li>Biomass Strategy</li>
-            <li>Project Leadership</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-{/* Founder 2 */}
-<div className="bg-[#F9FFF6] rounded-2xl p-8 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 mt-8">
-  <img
-    src="/905bf69052848aa8aead57b495017caf3c2e8017.jpg"
-    alt="Mr. T. Murali Krishna"
-    className="rounded-xl w-full h-auto md:w-[462px] md:h-[516px] object-cover md:mr-6"
-  />
-  <div className="w-full text-gray-800">
-    <h3 className="text-[#77C04B] font-semibold text-base md:text-lg mb-2 text-center md:text-left">
-      Business Operations
-    </h3>
-    <h3 className="text-[#257E2C] font-bold text-2xl md:text-3xl mb-4 text-center md:text-left">
-      Mr. T. Murali Krishna
-    </h3>
-    <div className="text-sm md:text-base whitespace-pre-line leading-relaxed">
-      <ul className="list-disc pl-5 space-y-2 text-md font-normal">
-        <li>Business Operations – RasiEn Eco</li>
-        <li>Qualifications: B.Tech, BOE, Govt. Certified Energy Manager</li>
-        <li>
-          Experience Summary:  
-          <ul className="list-disc pl-6 mt-1 space-y-1 marker:text-gray-600 marker:text-sm md:marker:text-base">
-            <li>With over 20 years of industrial experience, Mr. Krishna has worked with renowned brands including ITC, Apollo Tyres, MRF, and Yokohama. He brings deep knowledge in industrial O&M, energy efficiency, and biomass integration.</li>
-            
-          </ul>  
-            
-        </li>
-        <li>
-          Skills:
-          <ul className="list-disc pl-6 mt-1 space-y-1 marker:text-gray-600 marker:text-sm md:marker:text-base">
-            <li>Energy Optimization</li>
-            <li>Operational Strategy</li>
-            <li>Boiler Management</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-</div>
 
 
 

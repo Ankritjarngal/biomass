@@ -17,19 +17,36 @@ const ContactForm = () => {
             <h3 className="text-3xl font-black">CONTACT US</h3>
             <p className="text-lg font-black">FOR ENQUIRIES, CALL OR MAIL US:</p>
 
-            {/* Phone Contact Card */}
-            <div className="border border-white rounded-lg p-4 flex items-center gap-3  ">
-              <Phone className="text-white" size={25} />
-              <div>
-                <p className="text-sm text-white">Phone Number</p>
-                <a
-                  href="tel:+919381124568"
-                  className="text-white font-semibold underline "
-                >
-                  +91-93811-24568
-                </a>
-              </div>
-            </div>
+            <div className="border border-white rounded-lg p-4 flex flex-col gap-4">
+  {/* Phone Number 1 */}
+  <div className="flex items-center gap-3">
+    <Phone className="text-white" size={25} />
+    <div>
+      <p className="text-sm text-white">Phone Number</p>
+      <a
+        href="tel:+919381124568"
+        className="text-white font-semibold underline"
+      >
+        +91-93811-24568
+      </a>
+      <br />
+      <a
+        href="tel:+91-94411-09841
+"
+        className="text-white font-semibold underline"
+      >
+
+      +91-94411-09841
+      </a>
+    </div>
+  </div>
+
+  {/* Phone Number 2 */}
+
+
+
+</div>
+
 
             {/* Email Contact Card */}
             <div className="border border-white rounded-lg p-4 flex items-center gap-3">
@@ -42,6 +59,14 @@ const ContactForm = () => {
                 >
                   ssrao@sreeneegreen.in
                 </a>
+                <br />
+                <a
+                  href="mailto:info@sreeneegreen.in   "
+                  className="text-white font-semibold underline "
+                >
+
+info@sreeneegreen.in                </a>
+
               </div>
             </div>
           </div>
