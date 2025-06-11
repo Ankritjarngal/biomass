@@ -9,10 +9,10 @@ const Briquettes = () => {
       description="Pellets are small, cylindrical biomass fuels made by compressing agricultural or wood residues like sawdust or bagasse into dense, uniform shapes. Known for their high combustion efficiency and low moisture content, pellets are ideal for use in heating systems, biomass boilers, and industrial furnaces. Their consistent size, easy handling, and clean-burning nature make them a sustainable and convenient green fuel alternative for various energy applications."
       heroImage="/Container.png"
       stats={[
-        { value: '3800-4200 kcal/kg', label: 'Gross Calorific Value' },
-        { value: '<8%', label: 'Ash Content' },
-        { value: '<12%', label: 'Total Moisture' },
-        { value: '6000 MT/Month', label: 'Supply Capacity' },
+        { value: '4000 + 10%Kcal/Kg', label: 'Gross Calorific Value' },
+        { value: '<10%', label: 'Ash Content' },
+        { value: '<8%', label: 'Total Moisture' },
+        { value:"90 mm Diameter",label:"Briquette size" },
       ]}
       cards={[
         {
@@ -49,7 +49,10 @@ const Briquettes = () => {
           image: '/Feature image section.png',
             link:"/cashew-nut-shell",
         },
-      ]}
+      ]
+    }
+    variants={["100% Sawdust","100% Wood Chips","100% Corn Shanks","100% Bagasse","100% Groundnut Shells","80% Soya Husk/20% Sawdust","50% Sawdust/50% Wood Chips","50% Sawdust / 30% Wood Chips / 20% Groundnut Shell","50% Sawdust / 30% Wood Chips / 20% Groundnut Shell","Customized combinations"]}
+
     />
   )
 }

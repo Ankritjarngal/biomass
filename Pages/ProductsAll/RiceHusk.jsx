@@ -2,15 +2,15 @@ import React from 'react'
 import ProductPage from '../../Components/OurProducts/ProductPage'
 import BiomassAdvantage from '../../Components/Advantage'
 
-const RiceHusk = () => {
+const PaddyHusk = () => {
   return (
     <ProductPage
-      title="Ricehusk"
+      title="Paddy Husk"
       description="Rice Husk is the hard protective covering of rice grains that is separated during milling. It is a readily available agricultural by-product widely used as a biomass fuel. With moderate calorific value and low moisture content, rice husk serves as an efficient and economical energy source for rural and semi-urban industries. Its abundant availability and renewable nature make it an eco-friendly substitute for conventional fuels in boilers and gasifiers."
       heroImage="/Product card-1.png"
       stats={[
-        { value: '3200 kcal/kg', label: 'Gross Calorific Value' },
-        { value: '<20%', label: 'Ash Content' },
+        { value: '3200-3600 kcal/kg', label: 'Gross Calorific Value' },
+        { value: '<18%', label: 'Ash Content' },
         { value: '<12%', label: 'Total Moisture' },
         { value: '3000 MT/Month', label: 'Supply Capacity' },
       ]}
@@ -52,4 +52,4 @@ const RiceHusk = () => {
   )
 }
 
-export default RiceHusk
+export default PaddyHusk

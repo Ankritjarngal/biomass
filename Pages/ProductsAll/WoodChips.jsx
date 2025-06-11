@@ -11,7 +11,7 @@ const WoodChips = () => {
         { value: '3600-4000 kcal/kg', label: 'Gross Calorific Value' },
         { value: '<5%', label: 'Ash Content' },
         { value: '<30%', label: 'Total Moisture' },
-        { value: '9000 MT/Month', label: 'Supply Capacity' },
+        { value: '3000 MT/Month', label: 'Supply Capacity' },
         
       ]}
       cards={[

@@ -12,6 +12,7 @@ const ProductPage = ({
   stats,
   cards,
   discoverProducts,
+  variants, // New prop for variants
 }) => {
   const navigate = useNavigate();
   const scrollRef = useRef(null);
@@ -243,7 +244,7 @@ const ProductPage = ({
             </div>
 
             {/* Stats Grid - Fully Responsive */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 mb-8">
               {stats.map((stat, idx) => (
                 <div key={idx} className="w-full">
                   <h2 className="text-green-700 text-lg sm:text-xl md:text-2xl font-bold mb-2">
@@ -256,6 +257,23 @@ const ProductPage = ({
                 </div>
               ))}
             </div>
+
+            {/* Variants Section - Only show if variants prop is provided */}
+            {variants && variants.length > 0 && (
+              <div className="mt-8 md:mt-12">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-left mb-6">
+                  Variants
+                </h2>
+                <ul className="space-y-3 md:ml-12 lg:mr-16">
+                  {variants.map((variant, idx) => (
+                    <li key={idx} className="text-sm md:text-base text-gray-700 leading-relaxed flex items-center">
+                      <span className="w-2 h-2 bg-green-700 rounded-full mr-3 flex-shrink-0"></span>
+                      {variant}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             
           </div>
         </div>

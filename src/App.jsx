@@ -3,7 +3,7 @@ import Home from '../Pages/Home'
 import AboutUs from '../Pages/AboutUs'
 import { Products } from '../Pages/Products'
 import CashewNutShell from '../Pages/ProductsAll/CashewNutShell'
-import RiceHusk from '../Pages/ProductsAll/RiceHusk'
+import PaddyHusk from '../Pages/ProductsAll/RiceHusk'
 import WoodChips from '../Pages/ProductsAll/WoodChips'
 import PalmNutShell from '../Pages/ProductsAll/PalmNutShell'
 import SawDust from '../Pages/ProductsAll/SawDust'
@@ -24,7 +24,7 @@ function App() {
         <Route path='/about' element={<AboutUs />} />
         <Route path='/products' element={<Products />} />
         <Route path='/products/cashew-nut-shell' element={<CashewNutShell />} />
-        <Route path='/products/rice-husk' element={<RiceHusk />} />
+        <Route path='/products/rice-husk' element={<PaddyHusk />} />
         <Route path='/products/wood-chips' element={<WoodChips />}></Route>
         <Route path='/products/palm-nut-shell' element={<PalmNutShell/>}></Route>
         <Route path='/products/saw-dust' element={<SawDust/>}></Route>

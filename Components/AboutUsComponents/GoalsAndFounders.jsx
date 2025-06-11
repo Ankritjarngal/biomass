@@ -3,20 +3,37 @@ import { Eye, Target } from 'lucide-react';
 const sectionData = [
   {
     title: 'Channel Partner Units',
-    items: [
-      'Nellore – MSR Industries',
-      'Patancheru – Shlok Bio Fuels',
-      'Kamareddy – Sai Ram Agro',
-      'Nandyal – Gelivi Biofuels',
-      'Khammam – Planet Energy',
+    items: [ "Gandimysamma", 
+      "Patancheru" ,
+      "Siricilla" ,
+      'Kandukur' ,
+      "Ongole" ,
+      "Nallajerla",
+      "Devarapalli", 
+      "Vastavayi",
+      "Jadcherla",
+      "Jogipeta",
+      "Jagityal" ,
+      "Gadwal",
+      "Bidar",
+      "Nanded",
+     
     ],
   },
   {
     title: 'In-House Manufacturing Clients',
     items: [
-      'M/S NSL Sugars – Hyderabad',
-      'EID Parry – Bagalkot',
-      'Unique Biotech – Hyderabad',
+ "Dr.Reddys Labs",
+"Neuland Labs",
+"Granules Pharma", 
+"Piramal Pharma" ,
+"Indus Coffee",
+"Virchow Biotech", 
+"Sanzyme Biologics", 
+"Genesys Biologics" ,
+"Alliance One Tobacco", 
+"Paharpur Industries",
+"Laila Nutraceuticals",
     ],
   },
   {
@@ -137,7 +154,7 @@ const GoalFounderSection = () => {
     <img
       src="/b25c42174d7249d9246860aff0d736921537c7cb.png"
       alt="Quote"
-      className="w-10 h-10 rotate-180"
+      className="w-12 h-12 rotate-180"
     />
   </div>
 </div>
@@ -148,7 +165,7 @@ const GoalFounderSection = () => {
     <img
       src="/b25c42174d7249d9246860aff0d736921537c7cb.png"
       alt="Quote"
-      className="w-10 h-10"
+      className="w-12 h-12"
     />
   </div>
 </div>

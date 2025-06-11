@@ -5,7 +5,7 @@ const products = [
   { name: 'Pellets', img: '/Product card.png', alt: 'Pellets', link: '/products/pellets' },
   { name: 'Woodchips', img: '/Container-1.png', alt: 'Woodchips', link: '/products/wood-chips' },
   { name: 'Palm Nut Shell', img: '/Product card-2.png', alt: 'Palm Nut Shell', link: '/products/palm-nut-shell' },
-  { name: 'Rice Husk', img: '/Product card-1.png', alt: 'Rice Husk', link: '/products/rice-husk' },
+  { name: 'Paddy Husk', img: '/Product card-1.png', alt: 'Rice Husk', link: '/products/rice-husk' },
   { name: 'Bagasse Dust', img: '/Container-2.png', alt: 'Bagasse Dust', link: '/products/baggasse-dust' },
   { name: 'Saw Dust', img: '/Product image-1.png', alt: 'Saw Dust', link: '/products/saw-dust' },
   { name: 'Coffee Nut Shell', img: '/Product imag.png', alt: 'Coffee Nut Shell', link: '/products/coffee-nut-shell' },

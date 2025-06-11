@@ -4,7 +4,7 @@ const advantages = [
   { id: 3, title: 'TAX BENIFIT', image: '/5973d93737a93d9140642f6c74c702923658fb4c.png' },
   { id: 4, title: 'LOWER EMISSION OF HARMFUL GASES', image: '/b20970379f51a0a3ff2acdae32affe05861207c4.png' },
   { id: 5, title: 'CONCENTRATED', image: '/fb06099af19fbbdd18884dab905fb310779da016.png' },
-  { id: 6, title: 'CONST ECONOMICAL', image: '/2c8f7ad62260c19cc91bf0d49de1b145769dd41e.png' },
+  { id: 6, title: 'COST ECONOMICAL', image: '/2c8f7ad62260c19cc91bf0d49de1b145769dd41e.png' },
   { id: 7, title: 'HIGH THERMAL VALUE', image: '/099d16d5589f546b3577f44fd5d384f362e331b0.png' },
   { id: 8, title: 'MADE FROM LEFTOVER BIOMASS WASTE', image: '/32116b124c4793792ef3e21acfbd34df25e110c2.png' },
 ];

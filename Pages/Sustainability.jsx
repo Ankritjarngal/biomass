@@ -48,22 +48,38 @@ export function SustainabilitySection() {
         </p>
 
         <div className="space-y-6 max-w-lg mx-auto md:mx-0">
-          {["Industrial Responsibility", "Energy Transition", "Biomass Solution"].map((title, idx) => (
-            <div className="flex items-start gap-6" key={idx}>
-              <div className="w-9 h-9 rounded-full bg-[#D9D9D9] mt-1 shrink-0"></div>
-              <div>
-                <h4 className="font-bold text-xl">{title}</h4>
-                <p className="text-sm text-gray-600">
-                  {title === "Industrial Responsibility"
-                    ? "Modern industries are facing pressure to reduce carbon emissions while maintaining production efficiency."
-                    : title === "Energy Transition"
-                    ? "Clean fuel alternatives are essential for a sustainable future and regulatory compliance."
-                    : "Our biomass fuels offer a perfect balance of environmental responsibility and industrial performance."}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+  {[
+    {
+      title: "Industrial Responsibility",
+      image: "/5f892c20b0fcf8bb60924fd2fbcb2b0ca9ecddbe.png",
+    },
+    {
+      title: "Energy Transition",
+      image: "/8129894786666af909c8202230159e4297dca530.png",
+    },
+    {
+      title: "Biomass Solution",
+      image: "/b62e7b5aa16bcd5589e696c2ea623dcdd8bd00b5.png",
+    },
+  ].map((item, idx) => (
+    <div className="flex items-start gap-6" key={idx}>
+      <div className="w-9 h-9 rounded-full bg-[#D9D9D9] mt-1 shrink-0 flex items-center justify-center">
+        <img src={item.image} alt={item.title} className="w-5 h-5 object-contain" />
+      </div>
+      <div>
+        <h4 className="font-bold text-xl">{item.title}</h4>
+        <p className="text-sm text-gray-600">
+          {item.title === "Industrial Responsibility"
+            ? "Modern industries are facing pressure to reduce carbon emissions while maintaining production efficiency."
+            : item.title === "Energy Transition"
+            ? "Clean fuel alternatives are essential for a sustainable future and regulatory compliance."
+            : "Our biomass fuels offer a perfect balance of environmental responsibility and industrial performance."}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </div>
   );
@@ -72,21 +88,25 @@ export function SustainabilitySection() {
 function EnvironmentalImpact() {
   const impactData = [
     {
+      image:"/ea1bf12010a03d6d6e2f79b8e88b9204abab657e.png",
       value: "4-5x",
       title: "Lower Carbon Emissions",
       description: "Our biomass fuels produce significantly less carbon than traditional coal.",
     },
     {
-      value: "60%",
+      image:"/ea3bfefb2bce7b7949cd079e7bbce1c9c7d64ef1.png",
+      value: "50%",
       title: "Cost Savings",
       description: "Switch to biomass and realize significant cost advantages over time.",
     },
     {
+      image:"/84ca17b65b08d59bea287baed4c27a1b00477043.png",
       value: "0%",
       title: "Zero Sulfur, Zero Pollution",
       description: "Cleaner burning with no harmful sulfur emissions or particulates.",
     },
     {
+      image:"/3050744932824de45fa338f50e5e3a74fca3197b.png",
       value: "500+",
       title: "Supports Rural Economies",
       description: "Creating jobs and sustainable livelihoods in agricultural communities.",
@@ -103,17 +123,22 @@ function EnvironmentalImpact() {
       </p>
 
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
-        {impactData.map((item, index) => (
-          <div
-            key={index}
-            className="bg-white p-6 md:p-8 rounded-2xl shadow-sm text-center flex flex-col justify-center min-h-[400px]"
-          >
-            <h3 className="text-[#2C6E49] text-2xl font-bold mb-2">{item.value}</h3>
-            <h4 className="text-black font-bold text-2xl mb-2">{item.title}</h4>
-            <p className="text-md font-medium">{item.description}</p>
-          </div>
-        ))}
+  {impactData.map((item, index) => (
+    <div
+      key={index}
+      className="bg-white p-6 md:p-8 rounded-2xl shadow-sm text-center flex flex-col items-center justify-start min-h-[400px]"
+    >
+      <div className="mt-4 mb-6 w-16 h-16 flex items-center justify-center rounded-3xl bg-[#2C6E49]">
+        <img src={item.image} alt="" className="w-8 h-8 object-contain" />
       </div>
+
+      <h3 className="text-[#2C6E49] text-2xl font-bold mb-2">{item.value}</h3>
+      <h4 className="text-black font-bold text-2xl mb-2">{item.title}</h4>
+      <p className="text-md font-medium">{item.description}</p>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 }
@@ -199,7 +224,7 @@ function ResponsibilitySection() {
     <img
       src="/b25c42174d7249d9246860aff0d736921537c7cb.png"
       alt="Quote"
-      className="w-10 h-10 rotate-180"
+      className="w-15 h-15 rotate-180"
     />
   </div>
 </div>
@@ -210,7 +235,7 @@ function ResponsibilitySection() {
     <img
       src="/b25c42174d7249d9246860aff0d736921537c7cb.png"
       alt="Quote"
-      className="w-10 h-10"
+      className="w-15 h-15"
     />
   </div>
 </div>
@@ -232,7 +257,7 @@ function ResponsibilitySection() {
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* Text on left */}
         <div className="w-full md:w-1/2 text-center md:text-left">
-          <p className="text-md font-bold text-[#5E5E5E] uppercase mb-2">Revolutionizing</p>
+          <p className="text-md font-bold text-[#5E5E5E] uppercase mb-2 mt-6">Revolutionizing</p>
           <h2 className="text-2xl md:text-4xl font-bold leading-tight mb-6">
             A Responsibility For Today And A Better <br />
             <span className="text-[#257E2C]">Tomorrow</span>
