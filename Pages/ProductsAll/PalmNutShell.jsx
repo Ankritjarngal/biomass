@@ -6,7 +6,7 @@ const PalmNutShell = () => {
   return (
     <ProductPage
       title="Palm Nut Shell"
-      description="Rice Husk is the protective covering of rice grains separated during milling. It is a widely used agricultural by-product as biomass fuel. With moderate calorific value and low moisture, it serves as an efficient energy source for rural industries. Its availability and renewable nature make it an eco-friendly substitute for conventional fuels."
+      description="Palm nut shells are the hard outer covering of palm oil seeds, generated as a by-product of palm oil extraction. They are dense, dry, and have a naturally high calorific value, making them one of the most efficient biomass fuels. With low moisture and ash content, they provide clean and consistent combustion, making them ideal for industrial boilers, furnaces, and power plants requiring high thermal output."
       heroImage="/Product card-2.png"
       stats={[
         { value: '4500 kcal/kg', label: 'Gross Calorific Value' },

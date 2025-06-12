@@ -27,9 +27,9 @@ const ProductPage = ({
     { name: 'Pellets', img: '/Product card.png', alt: 'Pellets', link: '/pellets' },
     { name: 'Woodchips', img: '/Container-1.png', alt: 'Woodchips', link: '/wood-chips' },
     { name: 'Palm Nut Shell', img: '/Product card-2.png', alt: 'Palm Nut Shell', link: '/palm-nut-shell' },
-    { name: 'Rice Husk', img: '/Product card-1.png', alt: 'Rice Husk', link: '/rice-husk' },
+    { name: 'Paddy Husk', img: '/Product card-1.png', alt: 'Rice Husk', link: '/rice-husk' },
     { name: 'Bagasse Dust', img: '/Container-2.png', alt: 'Bagasse Dust', link: '/baggasse-dust' },
-    { name: 'Saw Dust', img: '/Product image-1.png', alt: 'Saw Dust', link: '/saw-dust' },
+    { name: 'Saw Dust', img: '/Saw dust image new.png', alt: 'Saw Dust', link: '/saw-dust' },
     { name: 'Coffee Nut Shell', img: '/Product imag.png', alt: 'Coffee Nut Shell', link: '/coffee-nut-shell' },
     { name: 'Cashew Nut Shell', img: '/Feature image section.png', alt: 'Cashew Nut Shell', link: '/cashew-nut-shell' },
   ];
