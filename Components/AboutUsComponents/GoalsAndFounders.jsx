@@ -39,12 +39,10 @@ const sectionData = [
   {
     title: 'Consultation',
     items: [
-      'Alliance Tobacco',
-      'Guntur ABD',
-      'Distilleries',
-      'Pebbair',
-      'NSL-KSL Sugars',
-      'Hyderabad/Unique Biotech',
+      "Fuel Switching Consultation",
+"Boiler Modifications",
+"Technical Manpower Engagement","Operational Support",
+"Cost & Efficiency Optimization","Eco-Friendly Transition"
     ],
   },
 ];
@@ -312,11 +310,7 @@ const GoalFounderSection = () => {
         brand: 'Greener Green Energies',
         image: '/76729b1d433a8c2eb4af380ca7cad89fc125611a.png',
       },
-      {
-        name: 'Visakhapatnam',
-        brand: 'Revitit Eco',
-        image: '/47845165facb9576c54a42dd2560d733235dca3b.png',
-      },
+     
     ].map((unit, idx) => (
       <div
         key={idx}

@@ -42,6 +42,8 @@ const Footer = () => {
             <li><Link to="/products/palm-nut-shell" onClick={scrollToTop} className="hover:text-green-300">Palm Nut Shell</Link></li>
             <li><Link to="/products/rice-husk" onClick={scrollToTop} className="hover:text-green-300">Rice Husk</Link></li>
             <li><Link to="/products/cashew-nut-shell" onClick={scrollToTop} className="hover:text-green-300">Cashew Nut Shell</Link></li>
+            <li><Link to="/products/corn-shank" onClick={scrollToTop} className="hover:text-green-300">Corn Shank</Link></li>
+
           </ul>
         </div>
 
@@ -49,20 +51,34 @@ const Footer = () => {
         <div className="flex-1">
           <h3 className="text-base font-semibold mb-3">Business Inquiries</h3>
           <ul className="space-y-1">
-            <li>ssrao@sreeneegreen.in</li>
-            <li>+91-93811-24568</li>
-            <li>+91-94406-29656</li>
-            <li>+91-99820-47999</li>
+          <li><a href="mailto:info@sreeneegreen.in">ssrao@sreeneegreen.in</a></li>
+          <li><a href="mailto:info@sreeneegreen.in">info@sreeneegreen.in</a></li>
+          <li><a href="tel:+919381124568">+91-93811-24568</a></li>
+<li><a href="tel:+919441109841">+91-94411-09841</a></li>
+<li><a href="tel:+919982047999">+91-99820-47999</a></li>
+<li><a href="tel:+919440628656">+91-94406-28656</a></li>
+
           </ul>
         </div>
 
         {/* Address */}
         <div className="flex-1">
           <h3 className="text-base font-semibold mb-3">Address</h3>
-          <p className="leading-relaxed">
-            P No. 15, 1st Floor, Lake View Enclave, Miyapur, Serilingampally, K.V. Rangareddy, Telangana, India, 500049
+          <p className="leading-relaxed text-base mt-3 mb-3">
+          Office Address
           </p>
+
+          <p className="leading-relaxed">
+          P No. 15, 1st Floor, Lake View Enclave, Miyapur, Serilingampally, K.V. Rangareddy, Telangana, India, 500049          </p>
+          <p className="leading-relaxed text-base mt-3 mb-3">
+          Plant Address
+          </p>
+          <p className="leading-relaxed">
+          HFP2+HMG Basuragadi Village, Hyderabad, Telangana 500043</p>
+
+
         </div>
+
       </div>
 
       {/* Divider & Social */}
