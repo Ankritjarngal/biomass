@@ -302,12 +302,12 @@ const GoalFounderSection = () => {
     {[
       {
         name: 'Kandukuru',
-        brand: 'Agrim Biofuel Solutions',
+        brand: 'Agrim Biotek Solutions',
         image: '/e49acdff03d439c4a534d2badeb30cd5a12c975f.png',
       },
       {
         name: 'Hyderabad',
-        brand: 'Sreenee green energies',
+        brand: 'Sreenee Green Energies',
         image: '/76729b1d433a8c2eb4af380ca7cad89fc125611a.png',
       },
      

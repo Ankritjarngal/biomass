@@ -8,7 +8,7 @@ const ContactUs=()=>{
             <Navbar></Navbar>
             <div className="relative">
         <img
-          src="dc778b9855fdb45ed40d963e8c5a752f6e7a5108.jpg"
+          src="/6c21b68c706e1f92a7d1043ba8e0a50a6f94c0b5.jpg"
           alt="Header"
           className="w-full h-[400px] object-cover"
         />
