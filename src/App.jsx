@@ -9,6 +9,7 @@ import PalmNutShell from '../Pages/ProductsAll/PalmNutShell'
 import SawDust from '../Pages/ProductsAll/SawDust'
 import Briquettes from '../Pages/ProductsAll/Briquettes'
 import Pellets from '../Pages/ProductsAll/Pellets'
+import CornShank from '../Pages/ProductsAll/CornShank'
 import CoffeeNutShell from '../Pages/ProductsAll/CoffeeNutShell'
 import BaggasseDust from '../Pages/ProductsAll/BaggasseDust'
 import ContactUs from '../Pages/ContactUs'
@@ -34,7 +35,10 @@ function App() {
         <Route path='/products/baggasse-dust' element={<BaggasseDust/>}></Route>
         <Route path='/contact' element={<ContactUs/>}></Route>
         <Route path='/sustainability' element={<Sustainability/>}></Route>
+        <Route path='/products/corn-shank' element={<CornShank/>}></Route>
+      
       </Routes>
+
     </BrowserRouter>
   )
 }

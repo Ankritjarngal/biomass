@@ -9,7 +9,7 @@ export default function HeroSection() {
         muted
         playsInline
       >
-        <source src="GEN-4T~2.MP4" type="video/mp4" />
+        <source src="Untitled design(1).mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

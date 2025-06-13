@@ -10,6 +10,7 @@ const products = [
   { name: 'Saw Dust', img: '/Saw dust image new.png', alt: 'Saw Dust', link: '/products/saw-dust' },
   { name: 'Coffee Nut Shell', img: '/Product imag.png', alt: 'Coffee Nut Shell', link: '/products/coffee-nut-shell' },
   { name: 'Cashew Nut Shell', img: '/Feature image section.png', alt: 'Cashew Nut Shell', link: '/products/cashew-nut-shell' },
+  {name:'Corn Shank' ,img:'/18f263de892170a89353d314f18c11d80d05a6eb.png', alt:'Corn Shank', link:'/products/corn-shank' }
 ];
 
 const BiomassProducts = () => {

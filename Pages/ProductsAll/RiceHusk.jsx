@@ -17,7 +17,7 @@ const PaddyHusk = () => {
       cards={[
         {
           title: 'Origin',
-          description: 'CollectedA by-product of rice milling, rice husk is the outer covering separated from rice grains. It is readily available in all rice-producing regions.',
+          description: 'Collected by-product of rice milling, rice husk is the outer covering separated from rice grains. It is readily available in all rice-producing regions.',
           image: '/0324dda61996e17c2f37e1722407a2b9aa1e8317.jpg',
         },
         {

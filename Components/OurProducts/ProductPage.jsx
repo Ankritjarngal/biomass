@@ -32,6 +32,8 @@ const ProductPage = ({
     { name: 'Saw Dust', img: '/Saw dust image new.png', alt: 'Saw Dust', link: '/saw-dust' },
     { name: 'Coffee Nut Shell', img: '/Product imag.png', alt: 'Coffee Nut Shell', link: '/coffee-nut-shell' },
     { name: 'Cashew Nut Shell', img: '/Feature image section.png', alt: 'Cashew Nut Shell', link: '/cashew-nut-shell' },
+    {name:'Corn Shank' ,img:'/18f263de892170a89353d314f18c11d80d05a6eb.png', alt:'Corn Shank', link:'/corn-shank' }
+
   ];
 
   // Filter out the current product based on title
