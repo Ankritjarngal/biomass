@@ -306,8 +306,8 @@ const GoalFounderSection = () => {
         image: '/e49acdff03d439c4a534d2badeb30cd5a12c975f.png',
       },
       {
-        name: 'Nallageria',
-        brand: 'Greener Green Energies',
+        name: 'Hyderabad',
+        brand: 'Sreenee green energies',
         image: '/76729b1d433a8c2eb4af380ca7cad89fc125611a.png',
       },
      
