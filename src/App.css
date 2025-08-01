@@ -8,4 +8,8 @@ body {
   * {
     font-family: 'Mulish', sans-serif !important;
   }
-  
+  @layer utilities {
+    .clip-slant-right {
+      clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    }
+  }

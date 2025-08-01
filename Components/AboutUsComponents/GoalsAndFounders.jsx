@@ -21,7 +21,7 @@ const sectionData = [
     ],
   },
   {
-    title: 'In-House Manufacturing Clients',
+    title: 'Major customer base',
     items: [
  "Dr.Reddys Labs",
 "Neuland Labs",
@@ -37,9 +37,9 @@ const sectionData = [
     ],
   },
   {
-    title: 'Consultation',
+    title: 'Our services',
     items: [
-      "Fuel Switching Consultation",
+      "Fuel Supply In ALl Kinds Of  Biomass",
 "Boiler Modifications",
 "Technical Manpower Engagement","Operational Support",
 "Cost & Efficiency Optimization","Eco-Friendly Transition"

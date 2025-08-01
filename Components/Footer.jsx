@@ -12,6 +12,11 @@ const Footer = () => {
 
         {/* Logo & Description */}
         <div className="flex-1">
+          <div>
+            <img src="/0d8c82437e7c1e4a50a711b4b67c276a852489d7.png" alt="Logo" 
+            className="w-12 h-12 rounded-full object-cover grayscale-100"/>
+          </div>
+          
           <p className="max-w-xs leading-relaxed">
             Our Company Provides Environmentally Sustainable Solid Green Fuels And Innovative Solutions Specifically Designed For Industrial Boilers.
           </p>

@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import {CircleChevronRight} from 'lucide-react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-
   const isHomePage = location.pathname === "/";
 
   return (
     <nav
       className={`w-full flex items-center justify-between
-        px-4 py-4 md:px-[60px]  /* 4 for mobile, 60px for desktop */
+        px-4 py-4 md:px-[60px]
         ${isHomePage ? "absolute top-0 left-0 right-0" : "relative"}
-        z-50 bg-${isHomePage ? "transparent" : "white"} ${
-        !isHomePage ? "shadow-sm" : ""
-      }`}
+        z-50 ${isHomePage ? "bg-transparent" : "bg-white shadow-sm"}`}
     >
       {/* Logo */}
       <div
@@ -32,10 +30,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Right Side (Links + Icon) */}
-      <div className="flex items-center gap-8">
+      {/* Right Side (Links + Download Button) */}
+      <div className="flex items-center gap-4 md:gap-6">
         {/* Desktop Nav Links */}
-        <ul className="hidden md:flex gap-10 text-base font-medium">
+        <ul className="hidden md:flex gap-8 text-[14px] font-medium">
           <li className="text-gray-700 hover:text-green-600">
             <Link to="/">Home</Link>
           </li>
@@ -53,16 +51,40 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Right Icon */}
-        <div className="w-10 h-10 rounded-full hidden md:flex items-center justify-center">
-          <img
-            src="/Component 16.png"
-            alt="icon"
-            className="object-cover w-full h-full rounded-full"
-          />
-        </div>
+        {/* Download Brochure Button - Desktop - FIXED VERSION */}
+        <a
+          href="/brochure.pdf"
+          download
+          className="hidden md:flex items-stretch overflow-hidden rounded-md text-[13px] font-medium border-2 border-[#7DC242] group transition-all duration-300 hover:shadow-lg hover:scale-105 relative bg-white"
+        >
+          {/* White Icon Section with slant */}
+          <div 
+            className="bg-white px-3 py-2 flex items-center justify-center relative z-10 group-hover:bg-gray-50 transition-colors duration-300"
+            style={{
+              clipPath: 'polygon(0 0, calc(100% - 10px) 0, 100% 100%, 0 100%)'
+            }}
+          >
+            <img
+              src="/dba7d5e804d195288f45884a96ade046fd933842.png"
+              alt="Download"
+              className="w-[16px] h-[16px] z-10 relative group-hover:scale-110 transition-transform duration-300"
+            />
+          </div>
 
-        {/* Hamburger Menu */}
+          {/* Green Text Section with slanted left edge - FIXED */}
+          <div 
+            className="bg-[#7DC242] group-hover:bg-[#5cae2d] text-white px-4 py-2 transition-all duration-300 relative z-20 -ml-px"
+            style={{
+              clipPath: 'polygon(10px 0, 100% 0, 100% 100%, 0 100%)'
+            }}
+          >
+            <span className="group-hover:translate-x-1 transition-transform duration-300 inline-block">
+              Download Brochure
+            </span>
+          </div>
+        </a>
+
+        {/* Hamburger Icon */}
         <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -118,7 +140,6 @@ const Navbar = () => {
               Products
             </Link>
           </li>
-         
           <li className="text-gray-700 hover:text-green-600">
             <Link to="/sustainability" onClick={() => setIsMenuOpen(false)}>
               Sustainability
@@ -128,6 +149,21 @@ const Navbar = () => {
             <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
               Contact Us
             </Link>
+          </li>
+          <li>
+            <a
+              href="/brochure.pdf"
+              download
+              className="inline-flex items-center gap-2 text-[#7DC242] font-medium border-2 border-[#7DC242] px-4 py-2 rounded-md hover:bg-[#7DC242] hover:text-white transition-all duration-300"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <img
+                src="/dba7d5e804d195288f45884a96ade046fd933842.png"
+                alt="Download"
+                className="w-[14px] h-[14px]"
+              />
+              Download Brochure
+            </a>
           </li>
         </ul>
       )}

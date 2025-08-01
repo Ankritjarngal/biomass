@@ -95,21 +95,21 @@ function EnvironmentalImpact() {
     },
     {
       image:"/ea3bfefb2bce7b7949cd079e7bbce1c9c7d64ef1.png",
-      value: "50%",
+      value: "Upto 50%",
       title: "Cost Savings",
       description: "Switch to biomass and realize significant cost advantages over time.",
     },
     {
       image:"/84ca17b65b08d59bea287baed4c27a1b00477043.png",
       value: "0%",
-      title: "Zero Sulfur, Zero Pollution",
+      title: "Zero Sulpur, Zero Pollution",
       description: "Cleaner burning with no harmful sulfur emissions or particulates.",
     },
     {
       image:"/3050744932824de45fa338f50e5e3a74fca3197b.png",
-      value: "500+",
+      value: "200+",
       title: "Supports Rural Economies",
-      description: "Creating jobs and sustainable livelihoods in agricultural communities.",
+      description: "Creating direct and indirect jobs for sustainable in industrial and agricultural communities",
     },
   ];
 
@@ -146,12 +146,12 @@ const benefits = [
   "Direct substitute for coal/wood in industrial boilers and kilns.",
   "Renewable, eco-friendly, non-polluting energy source.",
   "Smokeless combustion, low ignition temperature.",
-  "Leaves only white ash (2–5% ash vs. 30–49% in coal).",
-  "No binders; natural lignin acts as binder.",
+  "Leaves only white ash (2–5% ash vs. 30–40% in coal).",
+  "No chemical binders; natural lignin acts as binder.",
   "Fully efficient heat utilization.",
-  "High-density fuel (1000 kg/m³ vs. 50 kg agro-waste).",
-  "No toxic gases, sulfur, or odor.",
-  "Suitable for gasifiers and engines.",
+  "High-density and low-moisture fuels (1000 kg/m³ vs. 50 kg agro-waste).",
+  "No toxic gases, Sulphur, or odor.",
+  "Suitable for boilers and gasifiers.",
   "Can replace charcoal, reducing deforestation.",
   "Supports clean startup in large furnaces.",
   "Protects the environment from pollution.",
@@ -174,7 +174,7 @@ function PelletBenefits() {
       {/* Heading and bullet points on right */}
       <div className="w-full lg:w-1/2 space-y-4 text-gray-700 text-base text-center lg:text-left">
         <h2 className="text-2xl md:text-4xl font-bold mb-2 text-[#77C04B]">
-          Benefits Of Biomass Pellets
+          Benefits Of Biomass Fuels
         </h2>
         <ul className="list-disc pl-5 space-y-2 marker:font-medium max-w-lg mx-auto lg:mx-0">
           {benefits.map((point, index) => (
@@ -200,7 +200,7 @@ function SustainabilityStats() {
                 ? "MT/Month Biomass Fuel Supplied"
                 : index === 1
                 ? "Industrial Clients Served"
-                : "MT CO₂ Saved Annually"}
+                : "MT CO₂ Saved Monthly"}
             </p>
           </div>
         ))}

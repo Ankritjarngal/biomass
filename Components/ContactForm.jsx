@@ -8,14 +8,14 @@ const ContactForm = () => {
       {/* Left Section - Image + Contact Info */}
       <div className="relative w-full md:w-[48%] h-[500px] rounded-xl overflow-hidden shadow-lg">
         <img
-          src="/badaa488fb990404e0ff130e4f5a605cd176fb74.jpg"
+          src="/b75d7b02eaf8cb6c0def83b293b1e2fb10eb6e73.png"
           alt="Contact Background"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center p-6">
           <div className="text-white space-y-6 w-full max-w-xs">
             <h3 className="text-3xl font-black">CONTACT US</h3>
-            <p className="text-lg font-black">FOR ENQUIRIES, CALL OR MAIL US:</p>
+            <p className="text-lg font-black">FOR ENQUIRIES CALL US AT:</p>
 
             <div className="border border-white rounded-lg p-4 flex flex-col gap-4">
   {/* Phone Number 1 */}

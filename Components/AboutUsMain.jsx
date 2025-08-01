@@ -122,10 +122,15 @@ const AboutUsMain = () => {
       <div className="max-w-7xl mx-auto">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-12 mt-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6 md:mb-8">About Us</h2>
-          <p className="md:w-1/2 text-base font-bold">
-            Our Company Provides Environmentally Sustainable Solid Green Fuels And Innovative Solutions Specifically Designed For Industrial Boilers.
-          </p>
+        <h2 className="text-4xl font-extrabold mb-4 md:mb-6 leading-tight">
+  <div className="text-black">Clean Energy,</div>
+  <div className="text-[#257E2C]">Powerful Results</div>
+</h2>
+
+<p className="md:w-1/2 text-base font-semibold text-gray-700">
+  Our Company Provides Environmentally Sustainable Solid Green Fuels And Innovative Solutions Specifically Designed For Industrial Boilers.
+</p>
+
         </div>
 
         {/* Cards Section with horizontal scroll */}
