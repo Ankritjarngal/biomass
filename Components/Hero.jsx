@@ -5,19 +5,23 @@ export default function HeroSection() {
   return (
     <section className="relative w-full h-screen flex items-center justify-center text-white overflow-hidden">
       {/* Background YouTube Video */}
-      <iframe
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src="https://www.youtube.com/embed/tGiM0DmoHOY?autoplay=1&mute=1&loop=1&playlist=tGiM0DmoHOY&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1"
-        title="Background Video"
-        frameBorder="0"
-        allow="autoplay; encrypted-media"
-        style={{
-          width: '100vw',
-          height: '100vh',
-          objectFit: 'cover',
-          pointerEvents: 'none'
-        }}
-      ></iframe>
+      <div className="absolute top-0 left-0 w-full h-full z-0">
+        <iframe
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full"
+          src="https://www.youtube.com/embed/tGiM0DmoHOY?autoplay=1&mute=1&loop=1&playlist=tGiM0DmoHOY&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1&start=0&end=0"
+          title="Background Video"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          style={{
+            width: '177.77777778vh', // 16:9 aspect ratio
+            height: '56.25vw', // 16:9 aspect ratio
+            transform: 'translate(-50%, -50%)',
+            pointerEvents: 'none',
+            minWidth: '100%',
+            minHeight: '100%'
+          }}
+        ></iframe>
+      </div>
 
       {/* Text Content */}
       <div className="relative z-10 max-w-6xl px-4 w-full">
