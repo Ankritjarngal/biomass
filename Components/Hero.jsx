@@ -4,17 +4,20 @@ import { CircleChevronRight } from "lucide-react";
 export default function HeroSection() {
   return (
     <section className="relative w-full h-screen flex items-center justify-center text-white overflow-hidden">
-      {/* Background Video */}
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover object-top z-0"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="Untitled design(1).mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {/* Background YouTube Video */}
+      <iframe
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        src="https://www.youtube.com/embed/tGiM0DmoHOY?autoplay=1&mute=1&loop=1&playlist=tGiM0DmoHOY&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1"
+        title="Background Video"
+        frameBorder="0"
+        allow="autoplay; encrypted-media"
+        style={{
+          width: '100vw',
+          height: '100vh',
+          objectFit: 'cover',
+          pointerEvents: 'none'
+        }}
+      ></iframe>
 
       {/* Text Content */}
       <div className="relative z-10 max-w-6xl px-4 w-full">
