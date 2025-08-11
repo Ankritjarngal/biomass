@@ -53,7 +53,7 @@ const GoalFounderSection = () => {
     <div className="space-y-16 px-4 md:px-12 py-10">
 <div className="grid md:grid-cols-2 gap-8 items-center">
   <img
-    src="/ff5c4300da61c0d19f00ec723e4df4124cefffa1.png"
+    src="https://i.postimg.cc/cHz3VkRx/ff5c4300da61c0d19f00ec723e4df4124cefffa1.png"
     alt="Biomass factory"
     className="rounded-xl object-cover w-full h-80 md:w-[550px] md:h-[325px] md:ml-8"
   />
@@ -135,7 +135,7 @@ const GoalFounderSection = () => {
   {/* Image on the right */}
   <div className="md:mr-8 md:ml-auto">
     <img
-      src="/40b4cfdf402ce438b979ae6a55edeec39b748ac0.png"
+      src="https://i.postimg.cc/pV9cyg1B/40b4cfdf402ce438b979ae6a55edeec39b748ac0.png"
       alt="Wind turbine"
       className="rounded-xl object-cover w-full h-80 md:w-[550px] md:h-[325px]"
     />
@@ -189,7 +189,7 @@ const GoalFounderSection = () => {
           {/* Image with green background wrapper */}
           <div className="md:bg-[#D7EDC9] rounded-r-2xl p-4 rounded-bl-2xl">
             <img
-              src="/f397bc81df52561114b9e0dc17bc95a6c71d092b.jpg"
+              src="https://i.postimg.cc/zBy7bgpf/f397bc81df52561114b9e0dc17bc95a6c71d092b.jpg"
               alt="Mr. S Srinivas Rao"
               className="rounded-xl w-full h-auto md:w-[462px] md:h-[516px] object-cover"
             />
@@ -238,7 +238,7 @@ const GoalFounderSection = () => {
           {/* Image with green background wrapper */}
           <div className="md:bg-[#D7EDC9] rounded-l-2xl p-4 rounded-br-2xl">
             <img
-              src="/905bf69052848aa8aead57b495017caf3c2e8017.jpg"
+              src="https://i.postimg.cc/Y0c6vyhX/905bf69052848aa8aead57b495017caf3c2e8017.jpg"
               alt="Mr. A. Samba Shiva Rao"
               className="rounded-xl w-full h-auto md:w-[462px] md:h-[516px] object-cover"
             />
@@ -303,12 +303,12 @@ const GoalFounderSection = () => {
       {
         name: 'Kandukuru',
         brand: 'Agrim Biotek Solutions',
-        image: '/e49acdff03d439c4a534d2badeb30cd5a12c975f.png',
+        image: 'https://i.postimg.cc/B6JsJJCN/e49acdff03d439c4a534d2badeb30cd5a12c975f.png',
       },
       {
         name: 'Hyderabad',
         brand: 'Sreenee Green Energies',
-        image: '/76729b1d433a8c2eb4af380ca7cad89fc125611a.png',
+        image: 'https://i.postimg.cc/W1rPrdWX/76729b1d433a8c2eb4af380ca7cad89fc125611a.png',
       },
      
     ].map((unit, idx) => (
