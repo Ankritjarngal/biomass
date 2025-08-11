@@ -1,16 +1,16 @@
 import { ArrowUpRightFromCircle } from 'lucide-react';
 
 const products = [
-  { name: 'Briquettes', img: '/98e0bf8b36bd0b017064af2d02ebcc606a74a967(1).png', alt: 'Briquettes', link: '/products/briquettes' },
-  { name: 'Pellets', img: '/Product card.png', alt: 'Pellets', link: '/products/pellets' },
-  { name: 'Woodchips', img: '/Container-1.png', alt: 'Woodchips', link: '/products/wood-chips' },
-  { name: 'Palm Nut Shell', img: '/Product card-2.png', alt: 'Palm Nut Shell', link: '/products/palm-nut-shell' },
-  { name: 'Paddy Husk', img: '/Product card-1.png', alt: 'Rice Husk', link: '/products/rice-husk' },
-  { name: 'Bagasse Dust', img: '/Container-2.png', alt: 'Bagasse Dust', link: '/products/baggasse-dust' },
-  { name: 'Saw Dust', img: '/Saw dust image new.png', alt: 'Saw Dust', link: '/products/saw-dust' },
-  { name: 'Coffee Nut Shell', img: '/Product imag.png', alt: 'Coffee Nut Shell', link: '/products/coffee-nut-shell' },
-  { name: 'Cashew Nut Shell', img: '/Feature image section.png', alt: 'Cashew Nut Shell', link: '/products/cashew-nut-shell' },
-  {name:'Corn Shank' ,img:'/18f263de892170a89353d314f18c11d80d05a6eb.png', alt:'Corn Shank', link:'/products/corn-shank' }
+  { name: 'Briquettes', img: '/https://i.postimg.cc/SKF7fV5Z/98e0bf8b36bd0b017064af2d02ebcc606a74a967-1.png', alt: 'Briquettes', link: '/products/briquettes' },
+  { name: 'Pellets', img: 'https://i.postimg.cc/SK6LTCbm/Product-card.png', alt: 'Pellets', link: '/products/pellets' },
+  { name: 'Woodchips', img: 'https://i.postimg.cc/t4t785Jv/Container-1.png', alt: 'Woodchips', link: '/products/wood-chips' },
+  { name: 'Palm Nut Shell', img: 'https://i.postimg.cc/nL3rhhvv/Product-card-2.png', alt: 'Palm Nut Shell', link: '/products/palm-nut-shell' },
+  { name: 'Paddy Husk', img: 'https://i.postimg.cc/XX67zGb0/Product-card-1.png', alt: 'Rice Husk', link: '/products/rice-husk' },
+  { name: 'Bagasse Dust', img: 'https://i.postimg.cc/kgfthmTh/Container-2.png', alt: 'Bagasse Dust', link: '/products/baggasse-dust' },
+  { name: 'Saw Dust', img: 'https://i.postimg.cc/Hx7cx7df/Saw-dust-image-new.png', alt: 'Saw Dust', link: '/products/saw-dust' },
+  { name: 'Coffee Nut Shell', img: 'https://i.postimg.cc/mkyrzYq6/Product-imag-1.png', alt: 'Coffee Nut Shell', link: '/products/coffee-nut-shell' },
+  { name: 'Cashew Nut Shell', img: 'https://i.postimg.cc/J0x141Df/Feature-image-section.png', alt: 'Cashew Nut Shell', link: '/products/cashew-nut-shell' },
+  {name:'Corn Shank' ,img:'https://i.postimg.cc/RFQmXMRW/18f263de892170a89353d314f18c11d80d05a6eb.png', alt:'Corn Shank', link:'/products/corn-shank' }
 ];
 
 const BiomassProducts = () => {
@@ -18,7 +18,7 @@ const BiomassProducts = () => {
     <div className="w-full">
       <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[450px] mb-10">
         <img
-          src="/5b8c763f58795d35e15e75916700c45f6285c56a.jpg"
+          src="https://i.postimg.cc/02XVDYP3/5b8c763f58795d35e15e75916700c45f6285c56a.jpg"
           alt="Header"
           className="absolute inset-0 w-full h-full object-cover z-20"
         />
@@ -141,7 +141,7 @@ const BiomassProducts = () => {
       <section className="relative h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] mx-4 sm:mx-8 md:mx-24 mb-8 rounded-3xl overflow-hidden">
         {/* Background Image */}
         <img
-          src="/758b4309e365dc3289c86487788622da74bb4d7c.jpg"
+          src="https://i.postimg.cc/c4JWBG8J/758b4309e365dc3289c86487788622da74bb4d7c.jpg"
           alt="Green Future"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
