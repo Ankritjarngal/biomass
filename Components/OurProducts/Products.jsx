@@ -1,7 +1,7 @@
 import { ArrowUpRightFromCircle } from 'lucide-react';
 
 const products = [
-  { name: 'Briquettes', img: '/https://i.postimg.cc/SKF7fV5Z/98e0bf8b36bd0b017064af2d02ebcc606a74a967-1.png', alt: 'Briquettes', link: '/products/briquettes' },
+  { name: 'Briquettes', img: 'https://i.postimg.cc/SKF7fV5Z/98e0bf8b36bd0b017064af2d02ebcc606a74a967-1.png', alt: 'Briquettes', link: '/products/briquettes' },
   { name: 'Pellets', img: 'https://i.postimg.cc/SK6LTCbm/Product-card.png', alt: 'Pellets', link: '/products/pellets' },
   { name: 'Woodchips', img: 'https://i.postimg.cc/t4t785Jv/Container-1.png', alt: 'Woodchips', link: '/products/wood-chips' },
   { name: 'Palm Nut Shell', img: 'https://i.postimg.cc/nL3rhhvv/Product-card-2.png', alt: 'Palm Nut Shell', link: '/products/palm-nut-shell' },
