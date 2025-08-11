@@ -8,7 +8,7 @@ export default function Sustainability() {
       <Navbar />
       <div className="relative">
         <img
-          src="badaa488fb990404e0ff130e4f5a605cd176fb74.jpg"
+          src="https://i.postimg.cc/7hJZXvfd/badaa488fb990404e0ff130e4f5a605cd176fb74.jpg"
           alt="Header"
           className="w-full h-[250px] md:h-[450px] object-cover"
         />
