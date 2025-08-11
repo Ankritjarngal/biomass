@@ -8,7 +8,7 @@ const ContactForm = () => {
       {/* Left Section - Image + Contact Info */}
       <div className="relative w-full md:w-[48%] h-[500px] rounded-xl overflow-hidden shadow-lg">
         <img
-          src="/b75d7b02eaf8cb6c0def83b293b1e2fb10eb6e73.png"
+          src="https://i.postimg.cc/gJhc2M9k/b75d7b02eaf8cb6c0def83b293b1e2fb10eb6e73.png"
           alt="Contact Background"
           className="w-full h-full object-cover"
         />
