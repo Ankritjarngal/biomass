@@ -2,7 +2,7 @@ const AboutUsHero = () => {
   return (
     <div className="relative h-[40vh] md:h-[450vh] lg:h-[60vh] overflow-hidden">
       <img
-        src="/b75d7b02eaf8cb6c0def83b293b1e2fb10eb6e73.png"
+        src="https://i.postimg.cc/gJhc2M9k/b75d7b02eaf8cb6c0def83b293b1e2fb10eb6e73.png"
         alt="Nature background"
         className="absolute inset-0 w-full h-full object-cover object-[center_90%]
 r"
