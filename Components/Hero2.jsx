@@ -3,7 +3,7 @@ const HeroSection2 = () => {
     <section className="relative min-h-[60vh] sm:min-h-[65vh] md:min-h-[75vh] lg:min-h-[80vh] h-auto mx-4 sm:mx-6 md:mx-12 lg:mx-24 mb-6 md:mb-8 rounded-2xl md:rounded-3xl overflow-hidden">
       {/* Background Image */}
       <img
-        src="https://i.postimg.cc/7PNXWwcX/Sectionimage.png"
+        src="https://i.postimg.cc/WzrdxNp8/Sectionimage.png"
         alt="Background of a sustainable energy concept with biomass fuel production"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
