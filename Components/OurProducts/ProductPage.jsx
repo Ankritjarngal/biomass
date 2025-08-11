@@ -22,19 +22,19 @@ const ProductPage = ({
   const isUserScrollingRef = useRef(false);
 
   // All available products
-  const allProducts = [
-    { name: 'Briquettes', img: '/98e0bf8b36bd0b017064af2d02ebcc606a74a967(1).png', alt: 'Briquettes', link: '/briquettes' },
-    { name: 'Pellets', img: '/Product card.png', alt: 'Pellets', link: '/pellets' },
-    { name: 'Woodchips', img: '/Container-1.png', alt: 'Woodchips', link: '/wood-chips' },
-    { name: 'Palm Nut Shell', img: '/Product card-2.png', alt: 'Palm Nut Shell', link: '/palm-nut-shell' },
-    { name: 'Paddy Husk', img: '/Product card-1.png', alt: 'Rice Husk', link: '/rice-husk' },
-    { name: 'Bagasse Dust', img: '/Container-2.png', alt: 'Bagasse Dust', link: '/baggasse-dust' },
-    { name: 'Saw Dust', img: '/Saw dust image new.png', alt: 'Saw Dust', link: '/saw-dust' },
-    { name: 'Coffee Nut Shell', img: '/Product imag.png', alt: 'Coffee Nut Shell', link: '/coffee-nut-shell' },
-    { name: 'Cashew Nut Shell', img: '/Feature image section.png', alt: 'Cashew Nut Shell', link: '/cashew-nut-shell' },
-    {name:'Corn Shank' ,img:'/18f263de892170a89353d314f18c11d80d05a6eb.png', alt:'Corn Shank', link:'/corn-shank' }
-
-  ];
+  // All available products
+const allProducts = [
+  { name: 'Briquettes', img: 'https://i.postimg.cc/SKF7fV5Z/98e0bf8b36bd0b017064af2d02ebcc606a74a967-1.png', alt: 'Briquettes', link: '/briquettes' },
+  { name: 'Pellets', img: 'https://i.postimg.cc/SK6LTCbm/Product-card.png', alt: 'Pellets', link: '/pellets' },
+  { name: 'Woodchips', img: 'https://i.postimg.cc/t4t785Jv/Container-1.png', alt: 'Woodchips', link: '/wood-chips' },
+  { name: 'Palm Nut Shell', img: 'https://i.postimg.cc/nL3rhhvv/Product-card-2.png', alt: 'Palm Nut Shell', link: '/palm-nut-shell' },
+  { name: 'Paddy Husk', img: 'https://i.postimg.cc/XX67zGb0/Product-card-1.png', alt: 'Rice Husk', link: '/rice-husk' },
+  { name: 'Bagasse Dust', img: 'https://i.postimg.cc/kgfthmTh/Container-2.png', alt: 'Bagasse Dust', link: '/baggasse-dust' },
+  { name: 'Saw Dust', img: 'https://i.postimg.cc/Hx7cx7df/Saw-dust-image-new.png', alt: 'Saw Dust', link: '/saw-dust' },
+  { name: 'Coffee Nut Shell', img: 'https://i.postimg.cc/mkyrzYq6/Product-imag-1.png', alt: 'Coffee Nut Shell', link: '/coffee-nut-shell' },
+  { name: 'Cashew Nut Shell', img: 'https://i.postimg.cc/J0x141Df/Feature-image-section.png', alt: 'Cashew Nut Shell', link: '/cashew-nut-shell' },
+  { name: 'Corn Shank', img: 'https://i.postimg.cc/RFQmXMRW/18f263de892170a89353d314f18c11d80d05a6eb.png', alt: 'Corn Shank', link: '/corn-shank' }
+];
 
   // Filter out the current product based on title
   const otherProducts = allProducts.filter(product => 
